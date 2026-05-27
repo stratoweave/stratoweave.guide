@@ -53,7 +53,8 @@ jobs:
           git checkout --orphan "$PAGES_BRANCH"
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           cp -av ../stratoweave/site/. .
-          echo "stratoweave.guide" > CNAME
+          # Re-enable once the custom domain is configured in DNS:
+          # echo "stratoweave.guide" > CNAME
           git add .
           if git diff --cached --quiet; then
             echo "No site changes to publish"
