@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+        <loc>https://stratoweave.guide/get-started/</loc>
+      </url>
+      <url>
+        <loc>https://stratoweave.guide/developer/</loc>
+      </url>
+      <url>
+        <loc>https://stratoweave.guide/developer/acton/</loc>
+      </url>
+      <url>
+        <loc>https://stratoweave.guide/developer/system-spec/</loc>
+      </url>
+      <url>
+        <loc>https://stratoweave.guide/developer/transforms/</loc>
+      </url>
+      <url>
+        <loc>https://stratoweave.guide/developer/testing/</loc>
+      </url>
+      <url>
+        <loc>https://stratoweave.guide/operations/</loc>
+      </url>
+      <url>
+        <loc>https://stratoweave.guide/reference/</loc>
+      </url>
+      <url>
+        <loc>https://stratoweave.guide/reference/subscriptions/</loc>
+      </url>
+</urlset>
