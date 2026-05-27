@@ -1,0 +1,63 @@
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Set vars for build only if not on main"
+        run: |
+          echo "PAGES_BRANCH=test-pages" >> $GITHUB_ENV
+        if: github.ref != 'refs/heads/main'
+      - name: "Set vars for deploy if on main"
+        run: |
+          echo "PAGES_BRANCH=gh-pages" >> $GITHUB_ENV
+        if: github.ref == 'refs/heads/main'
+      - name: 'Set up Python'
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: 'Install Zensical'
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "zensical==0.0.42"
+      - name: 'Checkout'
+        uses: actions/checkout@v4
+        with:
+          path: 'guide'
+      - name: 'Checkout stratoweave repo'
+        uses: actions/checkout@v4
+        with:
+          repository: 'stratoweave/stratoweave'
+          path: 'stratoweave'
+      - name: 'Build StratoWeave guide'
+        run: |
+          cd stratoweave
+          zensical build
+      - name: "Configure git"
+        if: github.event_name != 'pull_request'
+        run: |
+          cd guide
+          git config --global --add safe.directory "$PWD"
+          git config user.name "Web Bot"
+          git config user.email web@stratoweave.org
+      - name: "Create pages branch from generated site"
+        if: github.event_name != 'pull_request'
+        run: |
+          cd guide
+          git checkout --orphan "$PAGES_BRANCH"
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -av ../stratoweave/site/. .
+          echo "stratoweave.guide" > CNAME
+          git add .
+          if git diff --cached --quiet; then
+            echo "No site changes to publish"
+            exit 0
+          fi
+          git commit -m "Publish web page"
+          git push --force origin "$PAGES_BRANCH"
