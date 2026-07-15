@@ -34,6 +34,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: 'stratoweave/stratoweave'
+          ref: 'main'
           path: 'stratoweave'
       - name: 'Build StratoWeave guide'
         run: |
@@ -51,10 +52,8 @@ jobs:
         run: |
           cd guide
           git checkout --orphan "$PAGES_BRANCH"
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name CNAME -exec rm -rf {} +
           cp -av ../stratoweave/site/. .
-          # Re-enable once the custom domain is configured in DNS:
-          # echo "stratoweave.guide" > CNAME
           git add .
           if git diff --cached --quiet; then
             echo "No site changes to publish"
