@@ -1,0 +1,2030 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide to StratoWeave.">
+      
+      
+        <meta name="author" content="StratoWeave Project">
+      
+      
+        <link rel="canonical" href="https://stratoweave.guide/reference/software-upgrade/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.42">
+    
+    
+      
+        <title>Software upgrades in StratoWeave - StratoWeave Guide</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.fba56155.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetbrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Jetbrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#software-upgrades-in-stratoweave" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="StratoWeave Guide" class="md-header__button md-logo" aria-label="StratoWeave Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            StratoWeave Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Software upgrades in StratoWeave
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/stratoweave/stratoweave" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introduction/" class="md-tabs__link">
+          
+  
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer/" class="md-tabs__link">
+          
+  
+  Developer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../operations/" class="md-tabs__link">
+          
+  
+  Operations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="StratoWeave Guide" class="md-nav__button md-logo" aria-label="StratoWeave Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    StratoWeave Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/stratoweave/stratoweave" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../introduction/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Introduction
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Introduction
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../developer/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Developer
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Developer
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/acton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Acton
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/system-spec/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  System specification
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/transforms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Transforms
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/service-discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Service discovery
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../operations/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Operations
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Operations
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Running StratoWeave
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/devices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Device management
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/restconf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  RESTCONF
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/http-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  HTTP inspection API
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Reference
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Reference
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yang-to-acton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  YANG to Acton compilation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subscriptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Subscriptions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Scope
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-current-manager-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Current manager behavior
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Current manager behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-release-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2.1 Release comparison
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configuration-and-operational-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Configuration and operational state
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Configuration and operational state">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-published-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3.1 Published state
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-software-adapter-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Software adapter API
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-current-ios-xe-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Current IOS XE implementation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Current IOS XE implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-staging" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5.1 Staging
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5.2 Installation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-commit-and-abort" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5.3 Commit and abort
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-operation-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5.4 Operation records
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5.5 Filters
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-time-bounds-and-estimates" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5.6 Time bounds and estimates
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ios-xe-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. IOS XE constraints
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Testing
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-work-still-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8. Work still needed
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Work still needed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-safe-intent-and-retries" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8.1 Safe intent and retries
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-staging-and-maintenance-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8.2 Staging and maintenance windows
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-checks-and-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8.3 Checks and cleanup
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-operational-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8.4 Operational detail
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-credentials-and-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8.5 Credentials and verification
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-broader-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8.6 Broader support
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        9. References
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+    <a href="https://github.com/stratoweave/stratoweave/edit/master/docs/reference/software-upgrade.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/stratoweave/stratoweave/raw/master/docs/reference/software-upgrade.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-code-2" viewBox="0 0 24 24"><path d="M4 12.15V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-3.35"/><path d="M14 2v5a1 1 0 0 0 1 1h5M5 16l-3 3 3 3M9 22l3-3-3-3"/></svg>
+    </a>
+  
+
+
+<h1 id="software-upgrades-in-stratoweave">Software upgrades in StratoWeave<a class="headerlink" href="#software-upgrades-in-stratoweave" title="Permanent link">&para;</a></h1>
+<p>Status: draft. This document describes the current implementation and the work
+still needed before software upgrades are safe to run without manual recovery.</p>
+<p>The current implementation supports an IOS XE upgrade with four NETCONF RPCs:
+copy the image to bootflash, add it, activate it with a 30 minute auto-abort
+timer, and commit it once the post-checks pass. It checks the running release
+before starting, waits for the device to return on the requested release,
+aborts when a post-check fails, publishes basic operational state, and resyncs
+the device schema.</p>
+<p>CI runs the same path against an in-process NETCONF mock. A live-device run is
+still required before release because the mock cannot reproduce IOS XE reload,
+resource, and transport failures.</p>
+<h2 id="1-scope">1. Scope<a class="headerlink" href="#1-scope" title="Permanent link">&para;</a></h2>
+<p><code>SoftwareManager</code> owns the sequence for one device. <code>SoftwareAdapter</code> implements
+the platform operations. The manager is declarative: configuration says which
+release the device should run, and the manager moves the device toward it.</p>
+<p>Software is treated as one release string per device. Platforms with separately
+versioned components are not supported by this API.</p>
+<p>The current manager implements:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>check -&gt; already running? -&gt; up-to-date
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  |
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  +-&gt; prepare -&gt; install -&gt; post-checks -&gt; commit -&gt; check -&gt; resync -&gt; succeeded
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>          |          |           |            |
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>          |          |           +------------+-&gt; rollback -&gt; check -&gt; rolled-back
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>          |          |                                |
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>          +----------+--------------------------------+-&gt; failed
+</span></code></pre></div>
+<p>The following parts of the model and API are not implemented yet:</p>
+<ul>
+<li>early staging controlled by <code>allow-staging</code>;</li>
+<li>pre-install checks;</li>
+<li>cleanup;</li>
+<li>per-job progress and timestamps;</li>
+<li>retry and recovery after a process restart;</li>
+<li>fleet scheduling and maintenance-window capacity.</li>
+</ul>
+<p>A failed install leaves the device on the old release. A failed rollback needs
+an operator.</p>
+<h2 id="2-current-manager-behavior">2. Current manager behavior<a class="headerlink" href="#2-current-manager-behavior" title="Permanent link">&para;</a></h2>
+<p>Every <code>DeviceMgr</code> owns one <code>SoftwareManager</code>. A device type supplies a
+<code>SoftwareAdapter</code>; device types without one use <code>NoSoftwareAdapter</code>, which
+reports unsupported operations.</p>
+<p>The current reconcile rules are:</p>
+<ol>
+<li>If no <code>target-release</code> is set, do nothing.</li>
+<li>If any veto exists, do nothing. The veto currently blocks the initial read,
+   staging, and installation.</li>
+<li>Read the running release with <code>check</code>.</li>
+<li>If the adapter says the running and requested releases match, publish
+   <code>up-to-date</code> and stop.</li>
+<li>If the read fails, log the error and continue. A failed read is not treated
+   as evidence that the device is already up to date.</li>
+<li>Publish <code>in-progress</code>, call <code>prepare</code>, then call <code>install</code>.</li>
+<li>After <code>install</code> succeeds, ask the adapter for the <code>commit_window</code>: seconds
+   left before the platform reverts on its own. With less than <code>COMMIT_MARGIN</code>
+   (2 minutes) left, roll back at once. Otherwise the post-check deadline is
+   the smaller of <code>POSTCHECK_TIMEOUT</code> (15 minutes) and what is left minus the
+   margin.</li>
+<li>Run every registered post-check. Each gets a <code>done(ok, reason)</code> action.
+   With no post-checks registered, go straight to <code>commit</code>.</li>
+<li>When all post-checks pass, call <code>commit</code>, then read the release again. If
+   the device does not run the target, it reverted before the commit took:
+   publish <code>failed</code>. Otherwise resync the device and publish <code>succeeded</code>.</li>
+<li>When a post-check fails, a post-check has not answered within the
+    deadline, or <code>commit</code> fails, call <code>rollback</code> with the release read in
+    step 3, read the release again, and publish <code>rolled-back</code>.</li>
+<li>A <code>prepare</code>, <code>install</code>, or <code>rollback</code> error publishes <code>failed</code>.</li>
+</ol>
+<p>Every decision bumps an attempt counter. A post-check reply or timer that
+belongs to an earlier step is ignored. Post-checks registered during a run
+count from the next run.</p>
+<p>The manager sets <code>busy</code> before the initial read and clears it after the final
+read or an error. Repeated configuration while a run is active does not start a
+second sequence.</p>
+<p><code>upgrade-campaign</code> and <code>allow-staging</code> are stored but do not affect the current
+sequence. In particular, <code>target-release</code> alone is enough to start work.</p>
+<p>Run state is held in memory. After a process restart, restored configuration can
+start a new reconcile. A later write to any part of the device meta
+configuration can also call <code>set_config</code> again. A failed run is not sticky: if
+the target still differs, a later reconcile can try again. These behaviors need
+to be made explicit and safe before automatic fleet use.</p>
+<h3 id="21-release-comparison">2.1 Release comparison<a class="headerlink" href="#21-release-comparison" title="Permanent link">&para;</a></h3>
+<p>The manager delegates version equality to <code>SoftwareAdapter.matches_release</code>.
+The default is an exact string match. IOS XE compares numeric components so
+zero padding does not matter:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>requested: 17.18.03a
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>reported:  17.18.3a
+</span></code></pre></div>
+<p>Without this comparison, an already-correct device can be copied, installed,
+and reloaded only to return to the same release. IOS XE can report such a no-op
+as successful, so the check must happen before the impacting RPC.</p>
+<h2 id="3-configuration-and-operational-state">3. Configuration and operational state<a class="headerlink" href="#3-configuration-and-operational-state" title="Permanent link">&para;</a></h2>
+<p>Software configuration is under <code>stratoweave-rfs:device/software</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Current use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>upgrade-campaign</code></td>
+<td>records which campaign owns the device; not used to gate the current reconcile</td>
+</tr>
+<tr>
+<td><code>target-release</code></td>
+<td>release the device should run; its presence starts reconciliation</td>
+</tr>
+<tr>
+<td><code>image-url</code></td>
+<td>URL IOS XE uses as <code>xcopy/source-path</code></td>
+</tr>
+<tr>
+<td><code>allow-staging</code></td>
+<td>reserved for scheduling <code>prepare</code> ahead of the maintenance window; currently ignored</td>
+</tr>
+<tr>
+<td><code>veto[holder]</code></td>
+<td>blocks the whole current reconcile while any entry exists</td>
+</tr>
+</tbody>
+</table>
+<p><code>image-url</code> is a full URL because the device pulls the image. The final path
+component becomes the bootflash filename. IOS XE supports SCP, FTP, HTTP, and
+HTTPS for this operation.</p>
+<p>SCP and FTP URLs may embed credentials. The leaf is readable anywhere device
+configuration is readable. Generic device and RPC debug logging also serializes
+configuration and RPC input today, so adapter-level URL redaction is not enough.
+Do not treat an embedded password as protected until the configuration and
+logging paths are changed.</p>
+<h3 id="31-published-state">3.1 Published state<a class="headerlink" href="#31-published-state" title="Permanent link">&para;</a></h3>
+<p>Operational state is published under:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>stratoweave-rfs:device=&lt;name&gt;/software/state
+</span></code></pre></div>
+<p><code>SoftwareManager</code> sends a <code>SoftwareState</code> copy to <code>DeviceMgr</code> whenever <code>status</code>
+or <code>running-release</code> changes. <code>DeviceMgr</code> merges it into the device entry's
+operational tree and calls the TTT device node's <code>update_oper</code>. Registration
+replays the current state, so a device node created after a state change still
+gets the latest value.</p>
+<p>The manager currently populates:</p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>status</code></td>
+<td><code>unknown</code>, <code>up-to-date</code>, <code>in-progress</code>, <code>succeeded</code>, <code>rolled-back</code>, or <code>failed</code></td>
+</tr>
+<tr>
+<td><code>running-release</code></td>
+<td>last release returned by <code>check</code>, using the device's spelling</td>
+</tr>
+</tbody>
+</table>
+<p>The YANG model also contains <code>upgrade-needed</code>, <code>job</code>, <code>precheck</code>, and
+<code>postcheck</code>. The current manager does not publish those values.</p>
+<p>Operational reads return the current state. <code>update_oper</code> does not trigger a
+TTT recompute, so a northbound subscription does not receive these changes yet.
+State is not persisted and returns to <code>unknown</code> when the process restarts.</p>
+<h2 id="4-software-adapter-api">4. Software adapter API<a class="headerlink" href="#4-software-adapter-api" title="Permanent link">&para;</a></h2>
+<p>The platform interface is defined in <code>src/device.act</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Contract</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>supports_mocking()</code></td>
+<td>whether the adapter can use the device NETCONF mock</td>
+</tr>
+<tr>
+<td><code>check(done)</code></td>
+<td>read the running release</td>
+</tr>
+<tr>
+<td><code>matches_release(running, target)</code></td>
+<td>compare the device's release spelling with requested intent</td>
+</tr>
+<tr>
+<td><code>prepare(done, release)</code></td>
+<td>stage and verify the image without activating it</td>
+</tr>
+<tr>
+<td><code>install(done, release)</code></td>
+<td>perform the impacting activation and reboot</td>
+</tr>
+<tr>
+<td><code>commit(done)</code></td>
+<td>confirm the activated release so the platform keeps it</td>
+</tr>
+<tr>
+<td><code>commit_window(done)</code></td>
+<td>seconds left before the platform reverts on its own, None without such a timer</td>
+</tr>
+<tr>
+<td><code>rollback(done, previous)</code></td>
+<td>return to the previous release</td>
+</tr>
+<tr>
+<td><code>cleanup(done)</code></td>
+<td>remove superseded images</td>
+</tr>
+<tr>
+<td><code>estimate(staged)</code></td>
+<td>estimated install time in seconds</td>
+</tr>
+</tbody>
+</table>
+<p>Jobs are asynchronous and report through callbacks. <code>install</code> must call
+<code>done(None)</code> only after the device is reachable again and the requested release
+has been confirmed running. <code>rollback</code> likewise reports only once the device
+runs <code>previous</code>; with <code>previous</code> unknown it reports once the device runs
+anything other than the release it aborted.</p>
+<p>The intended contract says <code>install</code> rechecks its preparation because an image
+staged earlier may have been removed. The current manager always calls
+<code>prepare</code> immediately before <code>install</code>, and the IOS XE <code>install</code> method assumes
+that copy is still present. The adapter needs to verify bootflash and repeat
+staging when necessary.</p>
+<p><code>IosXeSoftwareAdapter</code> is a class with no mutable run state. It forwards work to
+<code>IosXeSoftwareDriver</code>, an actor that owns the active phase, UUID, poll count,
+release, filename, and completion callback. This keeps mutable state behind one
+actor mailbox even though the adapter class can be referenced from more than one
+actor.</p>
+<h2 id="5-current-ios-xe-implementation">5. Current IOS XE implementation<a class="headerlink" href="#5-current-ios-xe-implementation" title="Permanent link">&para;</a></h2>
+<p>The adapter uses five operations:</p>
+<table>
+<thead>
+<tr>
+<th>Manager step</th>
+<th>IOS XE operation</th>
+<th>Impacting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prepare</code></td>
+<td><code>xcopy</code> the image to bootflash</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>install</code></td>
+<td><code>install</code> without <code>one-shot</code>, then <code>activate</code> with <code>auto-abort-timer-val=30</code></td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>commit</code></td>
+<td><code>install-commit</code></td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>rollback</code></td>
+<td><code>abort</code></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Without <code>one-shot</code>, <code>install</code> only adds the image. <code>activate</code> boots it and
+starts the device's auto-abort timer. Unless <code>install-commit</code> arrives within 30
+minutes, the smallest value the device accepts, the device reloads back onto the
+committed release on its own. The adapter counts the window from the moment it
+sent <code>activate</code> and reports what is left through <code>commit_window</code>, so the
+manager's post-check deadline never runs past it.</p>
+<h3 id="51-staging">5.1 Staging<a class="headerlink" href="#51-staging" title="Permanent link">&para;</a></h3>
+<p><code>prepare</code> sends:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">&lt;xcopy</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">"http://cisco.com/ns/yang/Cisco-IOS-XE-xcopy-rpc"</span><span class="nt">&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&lt;uuid&gt;</span>swi-stage-17.18.03a-1787894090-91366<span class="nt">&lt;/uuid&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">&lt;source-path&gt;</span>https://images.example/c8000v.17.18.03a.bin<span class="nt">&lt;/source-path&gt;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">&lt;destination-path&gt;</span>c8000v.17.18.03a.bin<span class="nt">&lt;/destination-path&gt;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nt">&lt;/xcopy&gt;</span>
+</span></code></pre></div>
+<p><code>source-path</code> is <code>image-url</code> verbatim. <code>destination-path</code> is only the filename;
+IOS XE prepends bootflash itself.</p>
+<p>The <code>xcopy</code> reply contains an echoed UUID but no completion result. After the
+RPC is accepted, the adapter polls <code>install-oper-data</code> for records with its UUID.
+Staging succeeds only when a completed successful record contains
+<code>install-txn-download</code>.</p>
+<h3 id="52-installation">5.2 Installation<a class="headerlink" href="#52-installation" title="Permanent link">&para;</a></h3>
+<p><code>install</code> first sends:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&lt;install</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">"http://cisco.com/ns/yang/Cisco-IOS-XE-install-rpc"</span><span class="nt">&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&lt;uuid&gt;</span>swi-add-17.18.03a-1787894412-27718<span class="nt">&lt;/uuid&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">&lt;one-shot&gt;</span>false<span class="nt">&lt;/one-shot&gt;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">&lt;path&gt;</span>bootflash:c8000v.17.18.03a.bin<span class="nt">&lt;/path&gt;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nt">&lt;/install&gt;</span>
+</span></code></pre></div>
+<p>and polls the operation records until a record with <code>install-txn-add-postchk</code>
+has completed. That add gives the image a device-assigned version, read from
+<code>install-oper-data/install-location-information/install-version-state-info</code> (the
+uncommitted entry whose version starts with the target release). <code>activate</code>
+names the image by that version, not by its bootflash path: activating an
+already-added image by path is refused with <code>install-smu-not-added</code>. Under a
+new UUID:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">&lt;activate</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">"http://cisco.com/ns/yang/Cisco-IOS-XE-install-rpc"</span><span class="nt">&gt;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&lt;uuid&gt;</span>swi-activate-17.18.03a-1787894600-11402<span class="nt">&lt;/uuid&gt;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nt">&lt;auto-abort-timer-val&gt;</span>30<span class="nt">&lt;/auto-abort-timer-val&gt;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nt">&lt;version&gt;</span>17.18.03a.0.5540<span class="nt">&lt;/version&gt;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nt">&lt;/activate&gt;</span>
+</span></code></pre></div>
+<p>The install RPCs have no output. <code>&lt;ok/&gt;</code> means IOS XE accepted the request; it
+does not mean the operation completed.</p>
+<p>The activate phase watches the operation record until it either fails a
+precheck or the read fails because the session dropped, which is the reload
+starting. After activation, the device reloads. Reads and connections fail during this
+period and are not treated as job failures. The adapter polls
+<code>device-system-data/software-version</code> until it can read a release equivalent to
+the target. Only then does <code>install</code> report success to the manager.</p>
+<h3 id="53-commit-and-abort">5.3 Commit and abort<a class="headerlink" href="#53-commit-and-abort" title="Permanent link">&para;</a></h3>
+<p><code>commit</code> sends <code>install-commit</code> with a new UUID and polls the operation records
+until the record has completed. It is one record and no reload, so no stage is
+required. <code>install-op-marked-succ</code> is a failure here: nothing to commit means
+the device had already reverted.</p>
+<p><code>rollback</code> sends <code>abort</code> with a new UUID. The device reloads onto the committed
+release. The adapter polls the running release until it equals <code>previous</code>.</p>
+<p>The manager performs one final <code>check</code> to refresh <code>running-release</code>. After a
+commit it also calls <code>DeviceMgr.resync</code> because the new release may expose a
+different module set. A failure of this final read is logged but does not undo
+an outcome that the adapter already confirmed.</p>
+<h3 id="54-operation-records">5.4 Operation records<a class="headerlink" href="#54-operation-records" title="Permanent link">&para;</a></h3>
+<p>IOS XE keeps active and finished operations in sibling lists:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Cisco-IOS-XE-install-oper:install-oper-data
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  install-oper
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    op-uuid, op-id, op-status, op-done
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    install-txn-summary-op
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>      txn-cmd, txn-status
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>  install-oper-hist
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    op-uuid, op-id, op-status, op-done
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    install-txn-sum-op-hist
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>      txn-cmd, txn-status
+</span></code></pre></div>
+<p>One RPC can create several records with the same UUID. <code>op-id</code> restarts for each
+operation, so the adapter correlates by UUID and checks all matching records.
+A record moves from the active list to history when it finishes, and that move
+can happen between polls.</p>
+<p><code>install-op-marked-succ</code> means IOS XE had nothing to do. It is not an error, but
+it is not proof that requested work happened. <code>op-done=op-reverted</code> and
+<code>op-status=install-op-fail-revert</code> mean the device undid the operation; the
+adapter treats both as a terminal failure.</p>
+<h3 id="55-filters">5.5 Filters<a class="headerlink" href="#55-filters" title="Permanent link">&para;</a></h3>
+<p>The version read selects only <code>software-version</code>. Operation polling selects the
+complete <code>install-oper</code> and <code>install-oper-hist</code> lists while excluding large
+siblings such as <code>install-packages</code>.</p>
+<p>Leaf selection inside these keyless lists is broken in the pinned
+<code>acton-yang</code>: every entry has the same empty key and filtering collapses them.
+Selecting an empty list with leaf children can also discard a matching sibling.
+The complete-list filter avoids both paths.</p>
+<p>TODO: Select only the required record leaves after <code>acton-yang</code> preserves all
+keyless-list entries and an empty selected list no longer drops matching sibling
+data. Measure the IOS XE reply size again after changing the filter.</p>
+<h3 id="56-time-bounds-and-estimates">5.6 Time bounds and estimates<a class="headerlink" href="#56-time-bounds-and-estimates" title="Permanent link">&para;</a></h3>
+<p>The driver counts polls and fails when they run out. Operation records are
+polled every ten seconds, up to <code>MAX_POLLS</code>, roughly 30 minutes. The running
+release is polled every twenty seconds while waiting for a reload, up to
+<code>VERSION_MAX_POLLS</code>, roughly 35 minutes. Past the auto-abort timer the device
+has reverted, so waiting longer for the target release cannot help.</p>
+<p>Current estimates are based on a c8000v and a roughly 1 GB image:</p>
+<table>
+<thead>
+<tr>
+<th>Work</th>
+<th>Estimate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transfer</td>
+<td>150 seconds</td>
+</tr>
+<tr>
+<td>install and reload</td>
+<td>390 seconds</td>
+</tr>
+</tbody>
+</table>
+<p>The adapter does not retry and does not send an abort when polling expires.
+During install that is safe: the device's own timer reverts an uncommitted
+activation.</p>
+<h2 id="6-ios-xe-constraints">6. IOS XE constraints<a class="headerlink" href="#6-ios-xe-constraints" title="Permanent link">&para;</a></h2>
+<p>These behaviors were observed on c8000v releases in the 17.11 to 17.18 range and
+are reflected in the adapter and mock.</p>
+<ul>
+<li>Install RPCs return <code>&lt;ok/&gt;</code> within a second and continue working for minutes.</li>
+<li>The device pulls the image and therefore needs network reachability to the
+  image server.</li>
+<li>Progress is reported in active and historical operation records keyed by a
+  caller-supplied UUID.</li>
+<li>The NETCONF session drops during installation. Several reconnect attempts can
+  occur before reads work again.</li>
+<li>Port 830 can accept TCP before the NETCONF server sends a hello. A failed read
+  during reload is not a final result.</li>
+<li>The running banner, installed inventory, requested release, and image filename
+  can use different spellings for the same release.</li>
+<li>Adding a large image can exhaust memory and reload the device before
+  activation. Treat the add as impacting even though it often completes without
+  disruption.</li>
+<li><code>install-op-marked-succ</code> reports a no-op as successful.</li>
+<li>Operation history is bounded. The adapter must not depend on old records
+  remaining indefinitely.</li>
+<li><code>activate</code> accepts <code>auto-abort-timer-val</code> from 30 to 1200 minutes. The
+  timer runs from activation, so the reload eats into it.</li>
+</ul>
+<p>The running release comes from:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Cisco-IOS-XE-device-hardware-oper:
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  device-hardware-data/device-hardware/device-system-data/software-version
+</span></code></pre></div>
+<p>The leaf contains a banner such as:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Cisco IOS XE Software, Version 17.18.02
+</span></code></pre></div>
+<p>The adapter extracts the value after <code>Version</code> and compares it by component.</p>
+<p>The pruned YANG in <code>src/adapters/software_iosxe_yang.act</code> contains only the RPCs
+and operational nodes used by the current adapter. Enumerations read from the
+device are modeled as strings so a new value does not make the whole reply fail
+to parse. The generated bindings are in
+<code>src/adapters/software_iosxe_rpc.act</code>.</p>
+<p>When adding another IOS XE operation, check its current schema with
+<code>get-schema</code>. A pruned local module can have the same revision as the complete
+module and is not evidence that an omitted node or RPC does not exist.</p>
+<h2 id="7-testing">7. Testing<a class="headerlink" href="#7-testing" title="Permanent link">&para;</a></h2>
+<p><code>IosXeSoftwareMock</code> runs behind <code>NetconfMockServer</code>, not behind a stubbed adapter.
+Tests exercise NETCONF framing, XML encoding and decoding, RPC validation,
+schema-driven parsing, operational reads, and RPC errors.</p>
+<p>The mock keeps the running and committed release, the staged and added image,
+and the operation history. It replies to an RPC before changing operational
+state, so an adapter that treats <code>&lt;ok/&gt;</code> as completion fails the tests. State
+changes are published through the mock operational datastore and observed by
+later <code>get</code> calls. The release after an install comes from the image file
+name, spelled as the device banner spells it.</p>
+<p>Two arguments make the mock behave like a particular device; a device entry
+carries them as <code>mock/software/upgrade-duration</code>, <code>mock/software/failure</code>
+and <code>mock/software/running-release</code> for the device type's adapter factory
+to pass on. A
+factory that passes <code>complete_after</code> instead gets a fixed delay per
+operation. <code>upgrade_duration</code> is the seconds a whole
+upgrade takes; the mock spreads it over the operations in the proportions
+measured on a c8000v with a 962 MB image (staging 130 s, add 20 s, a 240 s
+reload for activate and for abort, commit 5 s, 395 s in all), so 395 is as
+slow as the device and 0 completes each operation at once. <code>failure</code>
+reproduces one IOS XE failure:</p>
+<table>
+<thead>
+<tr>
+<th>failure</th>
+<th>device behavior</th>
+<th>manager ends</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>download-failed</code></td>
+<td><code>xcopy</code> accepted, then the download stage fails</td>
+<td><code>failed</code>, nothing installed</td>
+</tr>
+<tr>
+<td><code>add-failed</code></td>
+<td><code>install</code> accepted, then the verify stage fails</td>
+<td><code>failed</code></td>
+</tr>
+<tr>
+<td><code>activate-refused</code></td>
+<td><code>activate</code> rejected</td>
+<td><code>failed</code>, no abort</td>
+</tr>
+<tr>
+<td><code>commit-failed</code></td>
+<td><code>install-commit</code> accepted, then the commit stage fails</td>
+<td><code>rolled-back</code> after <code>abort</code></td>
+</tr>
+<tr>
+<td><code>reverts</code></td>
+<td>the abort timer ran out before the commit, so the commit finds nothing to do</td>
+<td><code>failed</code>, nothing to abort</td>
+</tr>
+</tbody>
+</table>
+<p>A failed operation is recorded as the device records it: the stages that ran,
+the failed one marked, and nothing after it.</p>
+<p>Current coverage includes:</p>
+<ul>
+<li>version parsing and zero-padding comparison;</li>
+<li>image filename and RPC input construction, including the abort timer;</li>
+<li>credential redaction in the adapter's own log message;</li>
+<li>record aggregation across UUIDs and multiple stages, and reverted records;</li>
+<li>preservation of multiple keyless history records by the current filter;</li>
+<li>a complete <code>xcopy</code>, <code>install</code>, <code>activate</code>, <code>install-commit</code> run through
+  <code>DeviceMgr</code> and <code>SoftwareManager</code>;</li>
+<li>a failing post-check ending in <code>abort</code> and <code>rolled-back</code>;</li>
+<li>a failed commit ending in <code>abort</code> and <code>rolled-back</code>;</li>
+<li>a device that reverted before the commit ending in <code>failed</code>;</li>
+<li>a refused <code>activate</code> ending in <code>failed</code> with no abort;</li>
+<li>a download that fails after the copy was accepted, ending in <code>failed</code> with
+  nothing installed;</li>
+<li>propagation of a device-side add failure to manager status <code>failed</code>;</li>
+<li>no RPCs when the device already runs an equivalent release;</li>
+<li>the running release following the image file name;</li>
+<li>the choice of delay between the upgrade duration, a fixed delay and instant;</li>
+<li>proof that RPC acceptance is not completion, and that a copy is still
+  running 0.2 s later under an upgrade duration;</li>
+<li>publication of software status and running release as operational data.</li>
+</ul>
+<p><code>src/test_swmgr.act</code> covers the manager against the in-memory adapter:
+post-checks gate the commit, a failed or silent post-check rolls back, a late
+reply is ignored, a removed post-check is not consulted, and a failed commit or
+rollback ends as designed.</p>
+<p>The mock does not reproduce memory pressure, SSH and NETCONF startup timing,
+vendor bugs, or all RPC error details. Run at least one real upgrade with the
+exact image, IOS XE release, and transport intended for deployment.</p>
+<p>The hardware acceptance check is:</p>
+<ol>
+<li>A device already on the target receives no install RPC and reports
+   <code>up-to-date</code>.</li>
+<li>A device on the previous release receives exactly <code>xcopy</code>, <code>install</code>,
+   <code>activate</code>, <code>install-commit</code>.</li>
+<li>The image URL and destination filename are correct, <code>activate</code> names the
+   added image by its device version, and carries <code>auto-abort-timer-val</code> 30.</li>
+<li>The RPC replies arrive before completion and polling observes each stage.</li>
+<li>The device returns on the requested release, <code>show install summary</code> shows
+   it committed, and the manager reports <code>succeeded</code>.</li>
+<li>The device module set is resynced after reload.</li>
+<li>With a failing post-check registered, the device receives <code>abort</code> instead
+   of <code>install-commit</code>, returns on the previous release, and the manager
+   reports <code>rolled-back</code>.</li>
+</ol>
+<p>Images remain outside git. Test environments should resolve device and image
+server addresses at run time rather than storing deployment-specific addresses
+in the repository.</p>
+<h2 id="8-work-still-needed">8. Work still needed<a class="headerlink" href="#8-work-still-needed" title="Permanent link">&para;</a></h2>
+<h3 id="81-safe-intent-and-retries">8.1 Safe intent and retries<a class="headerlink" href="#81-safe-intent-and-retries" title="Permanent link">&para;</a></h3>
+<p>Run status is not durable, restored intent can start work after restart, and a
+later device-meta write can retry a failed run. Define which configuration
+change authorizes a new attempt, persist enough attempt state to survive a
+restart, and fence late callbacks from older attempts.</p>
+<p>The manager also needs a deadline around adapter jobs. The IOS XE driver has a
+poll limit, but the manager can still remain busy forever if an adapter never
+calls back. If the manager abandons a job, the adapter needs a way to clear its
+local state without implying that it aborted the device operation.</p>
+<h3 id="82-staging-and-maintenance-windows">8.2 Staging and maintenance windows<a class="headerlink" href="#82-staging-and-maintenance-windows" title="Permanent link">&para;</a></h3>
+<p>Implement <code>allow-staging</code> so image transfer can run before the maintenance
+window while vetoes continue to block the impacting step. Re-check the veto
+immediately before activation.</p>
+<p><code>install</code> must verify that the image staged by an earlier <code>prepare</code> still exists
+and repeat preparation if necessary. The current IOS XE implementation assumes
+the immediately preceding <code>xcopy</code> is still valid.</p>
+<h3 id="83-checks-and-cleanup">8.3 Checks and cleanup<a class="headerlink" href="#83-checks-and-cleanup" title="Permanent link">&para;</a></h3>
+<p>Implement the registered pre-check callbacks with the same deadline and fencing
+as the post-checks. Post-checks get no device evidence from the manager; a
+registrant that needs it must read the device itself.</p>
+<p>The manager needs to know whether a platform supports rollback so it does not
+report recovery that the adapter cannot provide.</p>
+<p>Explore IOS XE <code>remove</code> before implementing cleanup. Until then, keep the previous image for
+manual recovery.</p>
+<h3 id="84-operational-detail">8.4 Operational detail<a class="headerlink" href="#84-operational-detail" title="Permanent link">&para;</a></h3>
+<p>Populate the modeled <code>job</code>, <code>precheck</code>, and <code>postcheck</code> nodes. Decide whether
+check results are aggregate or keyed by registrant. Make <code>update_oper</code> notify
+northbound subscribers as well as serving current values to reads.</p>
+<p>Report why an operation reverted, not only that it did.</p>
+<h3 id="85-credentials-and-verification">8.5 Credentials and verification<a class="headerlink" href="#85-credentials-and-verification" title="Permanent link">&para;</a></h3>
+<p>Replace credential-bearing <code>image-url</code> values with a URL plus a credential
+reference resolved at transfer time, or define another secret-handling model.
+Redact device configuration and RPC input in generic logging paths, not only the
+adapter's own messages.</p>
+<p>The IOS XE <code>image-files/sha1sum</code> value observed during testing did not match the
+file's SHA-1. Determine what the device computes and add a reliable staged-image
+integrity check. File presence and successful add are not a substitute for
+checksum verification.</p>
+<h3 id="86-broader-support">8.6 Broader support<a class="headerlink" href="#86-broader-support" title="Permanent link">&para;</a></h3>
+<p>Validate the adapter interface with a second platform. Decide whether release
+state remains monolithic or needs per-component versions. Fleet campaign order,
+parallelism, bandwidth limits, and window capacity belong above the per-device
+manager.</p>
+<h2 id="9-references">9. References<a class="headerlink" href="#9-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>src/device.act</code> — <code>SoftwareAdapter</code>, <code>SoftwareManager</code>, and operational-state
+  publication through <code>DeviceMgr</code>.</li>
+<li><code>src/swyang.act</code> — software configuration and state model.</li>
+<li><code>src/adapters/software_iosxe.act</code> — IOS XE adapter and driver.</li>
+<li><code>src/adapters/software_iosxe_yang.act</code> — pruned IOS XE schema used by the
+  adapter.</li>
+<li><code>src/adapters/software_iosxe_rpc.act</code> — generated typed RPC bindings.</li>
+<li><code>src/adapters/software_iosxe_oper.act</code> — generated operational-data bindings
+  and filter paths.</li>
+<li><code>src/adapters/test_software_iosxe.act</code> — IOS XE NETCONF mock and adapter tests.</li>
+<li><code>src/test_swmgr.act</code> — platform-neutral manager tests.</li>
+<li><code>src/test_ttt_oper_read.act</code> — operational-state publication test.</li>
+<li>Cisco C8000V upgrade guide, "Upgrading IOS XE Software":
+  <a href="https://www.cisco.com/c/en/us/td/docs/routers/C8000V/Configuration/c8000v-installation-configuration-guide/upgrade-the-cisco-ios-xe-software/upgrading-ios-xe-software.html">https://www.cisco.com/c/en/us/td/docs/routers/C8000V/Configuration/c8000v-installation-configuration-guide/upgrade-the-cisco-ios-xe-software/upgrading-ios-xe-software.html</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 StratoWeave Project &copy; 2026 The Linux Foundation&trade;. All rights reserved.
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/stratoweave/stratoweave" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.action.edit","content.action.view","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+    
+  </body>
+</html>
