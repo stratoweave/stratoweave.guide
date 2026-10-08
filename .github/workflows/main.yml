@@ -19,7 +19,7 @@ jobs:
           echo "PAGES_BRANCH=gh-pages" >> $GITHUB_ENV
         if: github.ref == 'refs/heads/main'
       - name: 'Set up Python'
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: 'Install Zensical'
@@ -27,11 +27,11 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install "zensical==0.0.42"
       - name: 'Checkout'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: 'guide'
       - name: 'Checkout stratoweave repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: 'stratoweave/stratoweave'
           ref: 'main'
