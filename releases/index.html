@@ -1,0 +1,2794 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide to StratoWeave.">
+      
+      
+        <meta name="author" content="StratoWeave Project">
+      
+      
+        <link rel="canonical" href="https://stratoweave.guide/releases/">
+      
+      
+        <link rel="prev" href="../reference/device-platform/">
+      
+      
+        <link rel="next" href="../roadmap/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.42">
+    
+    
+      
+        <title>Releases - StratoWeave Guide</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.fba56155.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetbrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Jetbrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#releases" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="StratoWeave Guide" class="md-header__button md-logo" aria-label="StratoWeave Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            StratoWeave Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Releases
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/stratoweave/stratoweave" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../introduction/" class="md-tabs__link">
+          
+  
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../developer/" class="md-tabs__link">
+          
+  
+  Developer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../operations/" class="md-tabs__link">
+          
+  
+  Operations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../reference/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="././" class="md-tabs__link">
+        
+  
+  Releases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../roadmap/" class="md-tabs__link">
+        
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="StratoWeave Guide" class="md-nav__button md-logo" aria-label="StratoWeave Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    StratoWeave Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/stratoweave/stratoweave" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../introduction/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Introduction
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Introduction
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../developer/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Developer
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Developer
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer/acton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Acton
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer/system-spec/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  System specification
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer/transforms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Transforms
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer/service-discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Service discovery
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../operations/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Operations
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Operations
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Running StratoWeave
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/devices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Device management
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/restconf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  RESTCONF
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/http-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  HTTP inspection API
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Reference
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Reference
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/yang-to-acton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  YANG to Acton compilation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/snmp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  SNMP devices
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/subscriptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Subscriptions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Event Notifications
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/software-upgrade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Software upgrades
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/device-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Device platform
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Releases
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Releases
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#unreleased" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Unreleased
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unreleased">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Core
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#northbound-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Northbound APIs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devices-adapters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Devices &amp; Adapters
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-images-upgrades" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Software Images &amp; Upgrades
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fleet-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fleet Manager
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Dependencies
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acton" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Acton
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acton-yang" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        acton-yang
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acton-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        acton-ssh
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acton-lmdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        acton-lmdb
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actmf" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        actmf
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actsnmp" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        actsnmp
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        http-router
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Documentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Testing &amp; CI
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compatibility-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Compatibility Notes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2610-2026-10-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        26.10 - 2026-10-23
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Roadmap
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#unreleased" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Unreleased
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unreleased">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Core
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#northbound-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Northbound APIs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devices-adapters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Devices &amp; Adapters
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-images-upgrades" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Software Images &amp; Upgrades
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fleet-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fleet Manager
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Dependencies
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acton" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Acton
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acton-yang" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        acton-yang
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acton-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        acton-ssh
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acton-lmdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        acton-lmdb
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actmf" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        actmf
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actsnmp" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        actsnmp
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        http-router
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Documentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Testing &amp; CI
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compatibility-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Compatibility Notes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2610-2026-10-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        26.10 - 2026-10-23
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+    <a href="https://github.com/stratoweave/stratoweave/edit/master/docs/releases.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/stratoweave/stratoweave/raw/master/docs/releases.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-code-2" viewBox="0 0 24 24"><path d="M4 12.15V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-3.35"/><path d="M14 2v5a1 1 0 0 0 1 1h5M5 16l-3 3 3 3M9 22l3-3-3-3"/></svg>
+    </a>
+  
+
+
+<h1 id="releases">Releases<a class="headerlink" href="#releases" title="Permanent link">&para;</a></h1>
+<p>StratoWeave releases are available on <a href="https://github.com/stratoweave/stratoweave/releases">GitHub</a>.</p>
+<!-- Include the changelog after its title, retaining release and pull-request links. -->
+<h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">&para;</a></h2>
+<h3 id="core">Core<a class="headerlink" href="#core" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Transform actors can write their output to the layer below at any time
+  with <code>write_output</code>, each write in its own transaction. Enable it with
+  <code>sw:direct-output</code> under <code>sw:transform</code>. The transform function then gets
+  the output written last, <code>prev_output</code>, and should return what the actor
+  would write for its input, so a recompute keeps the actor's output. A
+  write is replayed after a conflicting commit.
+  <code>fleetmgr.cfs.UpgradeCampaignTransform</code> is an example. <a href="https://github.com/stratoweave/stratoweave/pull/731">#698</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/783">#783</a></li>
+<li>A transform's output replaces the configuration it wrote before, instead of
+  being applied as a diff. Fixed source deletion, concurrent edits, restored
+  list membership and subscriptions on newly committed list elements. <a href="https://github.com/stratoweave/stratoweave/pull/680">#680</a></li>
+<li>A full configuration replacement, like a transform's output, skips list
+  elements and container children that are the same node as in the last
+  replacement committed from that source. They get no transaction, lock or
+  commit, and their transforms don't run. An equal value in a newly built
+  node is not skipped. <a href="https://github.com/stratoweave/stratoweave/pull/731">#731</a></li>
+<li>A session commit reports <code>done</code> and <code>complete</code> only after every transform
+  below it has committed. Before, a link subscriber could commit without its
+  linked input. <a href="https://github.com/stratoweave/stratoweave/pull/685">#685</a></li>
+<li>Fixed a deadlock in <code>update_dynstate</code> when the root transform was blocked
+  on a <code>get_data</code> call to the same transaction. <a href="https://github.com/stratoweave/stratoweave/pull/675">#675</a></li>
+<li>Optional parameters declare explicit defaults, which newer Acton versions
+  require. The transform generator emits them too.</li>
+<li>Child processes, environment variables and stdin go through the <code>Env</code>
+  services <code>env.process</code>, <code>env.vars</code> and <code>env.stdio</code>. <a href="https://github.com/stratoweave/stratoweave/pull/704">#704</a></li>
+<li>Fixed the etcd store leaving a request without a result when etcd answers
+  with an HTTP error whose body is not UTF-8. <a href="https://github.com/stratoweave/stratoweave/pull/724">#724</a></li>
+<li>Fixed subscription data running in the actor of the device adapter or TTT
+  layer that delivered it, when the consumer passed its own actor method.
+  <code>declare_subscriptions()</code> of <code>DeviceMgr</code>, <code>ttt.Layer</code> and
+  <code>adapters.adapter.DeviceAdapter</code> takes the data callback, and the layer's
+  <code>delta</code>, as an action instead of a proc. <a href="https://github.com/stratoweave/stratoweave/pull/763">#763</a></li>
+<li>A software adapter has a static <code>prepare_estimate()</code>: the seconds the copy
+  of the image takes, for planners. The IOS XE adapter gives 130. The unused
+  <code>estimate(staged)</code> is removed. <a href="https://github.com/stratoweave/stratoweave/pull/784">#784</a></li>
+</ul>
+<h3 id="northbound-apis">Northbound APIs<a class="headerlink" href="#northbound-apis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed NETCONF <code>&lt;get-config&gt;</code> returning the operational state published by
+  transforms. <a href="https://github.com/stratoweave/stratoweave/pull/683">#683</a></li>
+<li>RESTCONF supports the <code>content</code> query parameter on GET. <a href="https://github.com/stratoweave/stratoweave/pull/686">#686</a></li>
+<li>RESTCONF supports the <code>fields</code> query parameter on GET, which narrows the
+  reply to the selected nodes, like
+  <code>GET /restconf/data/demo-fleet:device=cpe-16?fields=software(target;state)</code>.
+  The reply for a list entry keeps its keys. <code>/restconf-state/capabilities</code>
+  lists the <code>fields</code> capability. An invalid <code>fields</code> value, <code>fields</code> on any
+  method other than GET, and a query parameter given twice get 400 Bad
+  Request. <a href="https://github.com/stratoweave/stratoweave/pull/805">#805</a></li>
+<li>Fixed RESTCONF GET, NETCONF <code>&lt;get&gt;</code> and yang-push filters that could not
+  reach an operational subtree under a config node, like
+  <code>/software:software/upgrade-campaign=foo/state</code> in fleetmgr. <a href="https://github.com/stratoweave/stratoweave/pull/681">#677</a></li>
+<li>Fixed <code>/restconf-state/capabilities</code> listing YANG modules next to the
+  RESTCONF protocol capabilities. <a href="https://github.com/stratoweave/stratoweave/pull/676">#676</a></li>
+<li>RESTCONF replies use compact JSON and XML. <code>ncurl</code> output and the
+  <code>/device/&lt;name&gt;/target</code>, <code>/running</code> and <code>/diff</code> inspection endpoints are
+  still indented. <a href="https://github.com/stratoweave/stratoweave/pull/684">#684</a></li>
+<li>The <code>/layer/&lt;idx&gt;</code> inspection endpoint takes the same <code>content</code> query
+  parameter, so it can return a layer's operational state too. <a href="https://github.com/stratoweave/stratoweave/pull/736">#736</a></li>
+<li>The NETCONF server serves the YANG library at <code>/yang-library</code> and
+  <code>/modules-state</code>. Besides the modules of the CFS schema, it lists
+  ietf-subscribed-notifications and ietf-yang-push as implemented, with the
+  features <code>subtree</code>, <code>xpath</code> and <code>on-change</code>. The <code>&lt;hello&gt;</code> has one
+  <code>yang-library:1.1</code> capability instead of a capability per module.
+  RESTCONF serves <code>/modules-state</code> too. <a href="https://github.com/stratoweave/stratoweave/pull/716">#716</a></li>
+<li>The NETCONF server serves RFC 5277 <code>create-subscription</code> and advertises the
+  <code>:notification</code> and <code>:interleave</code> capabilities. Application code sends a
+  notification to the subscribed sessions with <code>publish()</code> on
+  <code>NetconfServer.event_hub()</code>. There is no replay yet, and a session with an
+  RFC 5277 subscription cannot also hold RFC 8639 subscriptions. <a href="https://github.com/stratoweave/stratoweave/pull/752">#752</a></li>
+<li>The <code>/device/&lt;name&gt;/modules</code> and <code>/device/&lt;name&gt;/info</code> inspection endpoints
+  give the adapter of each module. <a href="https://github.com/stratoweave/stratoweave/pull/756">#756</a></li>
+<li>A NETCONF <code>&lt;edit-config&gt;</code> transaction is complete once it is committed to
+  TTT and persisted. Device interaction is left outside the transaction, so
+  the edit no longer waits for the devices to apply their configuration.
+  Before, a device that never connected kept the transaction from ever
+  completing, and since a Fleet Manager top sends one edit at a time to each
+  flotilla, a single such device blocked all further configuration to its
+  flotilla. <a href="https://github.com/stratoweave/stratoweave/pull/792">#792</a></li>
+</ul>
+<h3 id="devices-adapters">Devices &amp; Adapters<a class="headerlink" href="#devices-adapters" title="Permanent link">&para;</a></h3>
+<ul>
+<li>SNMP device adapters are generated from MIBs. The system generator
+  translates the MIBs to YANG and generates Acton types and subscription
+  paths from them. Transforms choose the polling period, and the SNMPv2c
+  adapter uses <code>credentials/password</code> as the community. Mini has an example
+  <code>ietf_snmp</code> device type with SNMPv2-MIB and IF-MIB. See the SNMP devices
+  reference. <a href="https://github.com/stratoweave/stratoweave/pull/701">#701</a></li>
+<li>Device and software adapters get the <code>Env</code> instead of a <code>TCPConnectCap</code>, so
+  they can use other transports, like UDP for SNMP, or start subprocesses.
+  <a href="https://github.com/stratoweave/stratoweave/pull/702">#702</a></li>
+<li>Each device publishes its operating system family, release, chassis model
+  and serial number under <code>state/platform</code>. A platform probe reads them on
+  every connect and after a software install. There are probes for IOS XE,
+  IOS XR, Junos, SR Linux, SR OS and ArcOS, and an app sets its probes with
+  <code>platform_probes</code> in its <code>device_types.act</code>. See the device platform
+  reference. <a href="https://github.com/stratoweave/stratoweave/pull/717">#712</a></li>
+<li>Transforms can subscribe to a device's YANG event notifications with
+  <code>declare_notif_subscriptions()</code> on the <code>DeviceMgr</code>, naming them in
+  <code>NotifSpec</code>s. Each <code>NotifEvent</code> carries the event time, the payload decoded
+  against the device schema and the raw XML. The NETCONF adapter uses RFC 8639
+  <code>establish-subscription</code> on the main session where the device supports it,
+  and otherwise an RFC 5277 subscription on a session of its own. Delivery is
+  at most once, with no replay. Pass a <code>synced</code> action to learn when the
+  subscriptions are in place, before sending an RPC whose result arrives as
+  an event. See the event notifications reference. <a href="https://github.com/stratoweave/stratoweave/pull/752">#752</a></li>
+<li><code>ncurl notifications</code> prints the event notifications a device sends, all of
+  them or those named with <code>--notification module:name</code>, and how the adapter
+  subscribed to them. <a href="https://github.com/stratoweave/stratoweave/pull/752">#752</a></li>
+<li>When a device advertises <code>ietf-netconf-notifications</code> (RFC 6470), the
+  <code>DeviceMgr</code> subscribes to <code>netconf-config-change</code> and resyncs the device's
+  running configuration when one arrives. A change made outside StratoWeave
+  is found without waiting for a reconnect. StratoWeave's own commits cause
+  a resync too, because the <code>DeviceMgr</code> does not check <code>changed-by</code>. <a href="https://github.com/stratoweave/stratoweave/pull/753">#753</a></li>
+<li><code>adapters.iosxe_cli.IosXeCliAdapter</code> runs IOS XE commands over SSH, for
+  what NETCONF lacks on a device, or on older releases where NETCONF does
+  not start at all. It returns what it reads in the <code>stratoweave-iosxe-cli</code>
+  YANG module: the files on a file system from <code>dir</code>, the release, model,
+  serial number and boot image from <code>show version</code>, and the output of
+  <code>show install summary</code> and <code>show bootvar</code>. A device type that uses it adds
+  <code>adapters.iosxe_cli_yang.models</code> to its schema. <a href="https://github.com/stratoweave/stratoweave/pull/777">#755</a></li>
+<li>A device can run extra adapters beside the adapter of its device type, for
+  what that adapter does not have, like a CLI adapter for an RPC that the
+  device lacks over NETCONF. An extra adapter is a device type too, listed in
+  the device's <code>extra-adapter</code> list with an optional <code>address</code>, <code>port</code> and
+  <code>credentials</code>. Without a <code>port</code> it uses its own default port, not the port
+  of the address. A module goes to the first connected adapter that has it,
+  the adapter of the device type first, and moves when an adapter connects
+  or loses its connection. Gets, subscriptions, RPCs and event
+  notification subscriptions go to the adapters of the modules that their
+  top-level nodes name, and configuration goes only to the adapter of the
+  device type. <code>state/adapter</code> shows whether each adapter is connected. An
+  adapter runs as an extra adapter when it passes its device type to the
+  <code>DeviceMgr</code>'s <code>on_connect()</code> and <code>on_disconnect()</code>, as the NETCONF, SNMP
+  and IOS XE CLI adapters do. See the device management reference. <a href="https://github.com/stratoweave/stratoweave/pull/756">#756</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/799">#765</a></li>
+<li><code>DeviceMgr.get_connected_modules()</code> gives the modules of a device's
+  connected adapters, and <code>get_unconnected_durations()</code> how long each adapter
+  that is not connected has been without a connection. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>Fixed devices without yang-library or netconf-monitoring, like Junos 10.4,
+  getting an empty module set, so transforms computed nothing for them.
+  Their module set has the other capabilities of their <code>&lt;hello&gt;</code>, named by
+  URI, except the NETCONF protocol ones. The Junos platform probe applies on
+  the <code>http://xml.juniper.net/netconf/junos/1.0</code> capability. <a href="https://github.com/stratoweave/stratoweave/pull/721">#721</a></li>
+<li>The NETCONF adapter fails a get whose filter names a node that the device
+  schema lacks, with <code>Filter node &lt;path&gt; not found in device schema</code>. Before,
+  those nodes were dropped from the reply without an error. <a href="https://github.com/stratoweave/stratoweave/pull/712">#712</a></li>
+<li><code>ncurl</code> takes the repeatable <code>--ssh-key-exchange</code>,
+  <code>--ssh-host-key-algorithm</code>, <code>--ssh-cipher</code> and <code>--ssh-mac</code> options for
+  devices that only offer old SSH algorithms, like Junos 10.4. Its new
+  <code>platform</code> command prints the platform the probes read. The default port
+  is 830 instead of 42830, and without <code>--password</code> it prompts for the
+  password instead of using <code>admin</code>. <a href="https://github.com/stratoweave/stratoweave/pull/720">#717</a></li>
+<li>After refused credentials, an untrusted host key or no common SSH
+  algorithm, the NETCONF adapter tries to connect again once a minute
+  instead of every second. Repeated failed logins can lock the account on
+  some devices. A change to the device's settings connects at once. <a href="https://github.com/stratoweave/stratoweave/pull/720">#720</a></li>
+<li>Fixed NETCONF RPCs to Junos 10.4 waiting until their timeout. Its replies
+  carry <code>xmlns</code> twice, which is not valid XML. The NETCONF client drops the
+  repeated attribute with the new <code>duplicate-attributes</code> fixup. <a href="https://github.com/stratoweave/stratoweave/pull/719">#719</a></li>
+<li>Fixed "Invalid NETCONF chunk framing" errors around NETCONF session
+  restarts, seen with large mock fleets. After such an error the device
+  adapter restarts the session once, not once for every write. <a href="https://github.com/stratoweave/stratoweave/pull/693">#691</a></li>
+<li>Fixed the mock NETCONF server keeping a session's yang-push subscriptions
+  after the session ended. Every client restart added another set of
+  updates. <a href="https://github.com/stratoweave/stratoweave/pull/692">#692</a></li>
+<li>Fixed a transform's subscriptions to a device being lost when they were
+  declared before the <code>DeviceMgr</code> had its adapter, for example when the
+  device and the transform's input are written in one transaction. The
+  <code>DeviceMgr</code> passes them on to the adapter it gets later. In Fleet Manager,
+  a campaign could keep upgraded devices pending because the top never
+  subscribed to their flotilla. <a href="https://github.com/stratoweave/stratoweave/pull/747">#747</a></li>
+<li>The NETCONF adapter logs in with the first private key in the device's
+  <code>credentials/key</code>, with or without a password, on the main session and on
+  the RFC 5277 notification sessions. Before, it connected only with a
+  password. <code>ncurl</code> takes a private key file with <code>--key</code>. <a href="https://github.com/stratoweave/stratoweave/pull/776">#776</a></li>
+<li>An extra adapter can have SSH settings of its own in <code>extra-adapter/ssh</code>,
+  which replace the device's <code>ssh</code> for that adapter, as <code>credentials</code> does.
+  The IOS SSH server of a C1111 sends no server-sig-algs, so an RSA key needs
+  <code>public-key-algorithm</code> <code>ssh-rsa</code> on its CLI port, while its NETCONF port
+  takes the RSA SHA-2 signatures. <a href="https://github.com/stratoweave/stratoweave/pull/776">#776</a></li>
+<li>The <code>verify</code> RPC of the IOS XE CLI adapter runs the IOS XE <code>verify</code>
+  command in its forms. Without an algorithm, the device checks the hashes
+  and the signature that an image holds. With <code>md5</code> or <code>sha512</code>, it
+  computes the digest, and with a <code>hash</code> too, it compares them and
+  <code>verified</code> says whether they match. <a href="https://github.com/stratoweave/stratoweave/pull/777">#755</a></li>
+<li>The IOS XE CLI adapter runs install commands with its <code>install</code> RPC: add,
+  activate with an abort timer, commit, abort, remove and rollback. It says
+  whether the device reloads. A device in bundle mode refuses <code>install add</code>
+  alone, and <code>install add file F activate commit</code> converts it to install
+  mode. <a href="https://github.com/stratoweave/stratoweave/pull/777">#777</a></li>
+<li>The <code>configure</code> RPC of the IOS XE CLI adapter types configuration lines in
+  <code>configure terminal</code> over an SSH shell, one at a time, and stops at the
+  first line that the device rejects. <code>write-memory</code> saves the
+  configuration. Install mode boots <code>bootflash:packages.conf</code>, which the
+  boot statement has to name, and a conversion sets it this way. <a href="https://github.com/stratoweave/stratoweave/pull/777">#777</a></li>
+<li>In mock mode, the IOS XE CLI adapter answers from a <code>CliMock</code>, which a test
+  gets with <code>get_mock()</code> and gives the replies of the device. <a href="https://github.com/stratoweave/stratoweave/pull/777">#777</a></li>
+<li>The IOS XE CLI adapter logs in once per device and keeps an SSH shell
+  open, in which it types one command at a time. IOS XE closes the
+  connection when an exec channel ends. The device is connected while the
+  shell is ready. When a login fails, the connection closes, or a command
+  gets no prompt within its time, the adapter reports the device as
+  disconnected and logs in again. After a minute without a command, it
+  types an empty line, so a dead connection shows. <a href="https://github.com/stratoweave/stratoweave/pull/780">#765</a></li>
+<li>The <code>install</code> RPC of the IOS XE CLI adapter answers the question that
+  <code>install remove</code> asks before it deletes files, which has no
+  <code>prompt-level none</code> on IOS XE 17.15 and comes twice on 16.8, and the
+  question of <code>install abort</code>. At debug level the adapter logs each command
+  that it types and each question that it answers. <a href="https://github.com/stratoweave/stratoweave/pull/799">#780</a></li>
+<li>The <code>ios-xe-cli</code> platform probe reads <code>show version</code> through the IOS XE CLI
+  adapter, after the NETCONF probe, so an IOS XE device without NETCONF, like
+  16.8 on a C1111, has a platform. Probes run over the modules of the
+  connected adapters, so a device whose NETCONF went down reads its platform
+  over the CLI. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>The IOS XE CLI adapter has a <code>copy</code> RPC, which fetches a file onto the
+  device and tells how far it is from the <code>!</code> marks of the copy, and a
+  <code>delete</code> RPC. It reads when the running and the startup configuration last
+  changed, and the index of each file in <code>dir</code>. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>The IOS XE CLI adapter reads the BGP neighbors into <code>Cisco-IOS-XE-bgp-oper</code>
+  from <code>show bgp ... neighbors</code>, in the shape that NETCONF gives them, and
+  realizes subscriptions by polling, as the SNMP adapter does. The fleetmgr
+  BGP upgrade checks then work on a device without NETCONF. The polling
+  moved out of the SNMP adapter into the <code>adapters.polling.Poller</code> actor,
+  which both adapters use. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>Fixed event notifications of the IOS XE <code>-events-oper</code> modules, like
+  <code>interface-admin-state-change</code> in <code>Cisco-IOS-XE-ios-events-oper</code>, never
+  arriving. The NETCONF adapter subscribed to them on the RFC 5277 <code>NETCONF</code>
+  stream, which the device accepts but sends nothing on. It now subscribes to
+  them on <code>yang-notif-native</code>, as it does for the <code>-events</code> modules. <a href="https://github.com/stratoweave/stratoweave/pull/782">#782</a></li>
+</ul>
+<h3 id="software-images-upgrades">Software Images &amp; Upgrades<a class="headerlink" href="#software-images-upgrades" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Software images can be uploaded over HTTP into an image folder, set with
+  <code>--software.image-dir</code>. Upload with <code>PUT /image-file/&lt;name&gt;</code>, list with
+  <code>GET /image-file</code> and remove with <code>DELETE /image-file/&lt;name&gt;</code>. The new
+  <code>stratoweave-images</code> module adds an image list, <code>/images/image</code>. Add
+  <code>swyang.images</code> to the top layer to use it. The list and the folder are not
+  kept in sync yet. <a href="https://github.com/stratoweave/stratoweave/pull/703">#703</a></li>
+<li>An image in <code>/images/image</code> has a <code>family</code>, like <code>c8000v-universalk9</code>, and
+  a <code>default</code> flag. A family has at most one default image.
+  <code>/images/url-base</code> says where devices fetch the images from: an image's URL
+  is <code>url-base</code> followed by the image name. <a href="https://github.com/stratoweave/stratoweave/pull/743">#742</a></li>
+<li>The device software state has two new leaves: <code>stage</code>, the step the
+  run is in or ended in, and <code>reason</code>, set when a run fails or rolls back.
+  The IOS XE adapter takes <code>reason</code> from the <code>txn-sub-state</code> of the failed
+  install. <a href="https://github.com/stratoweave/stratoweave/pull/678">#669</a></li>
+<li>The IOS XE mock can serve a BGP neighbor for the upgrade checks. Two new
+  mock failures use it: with <code>bgp-down</code> the pre-check refuses the install, and
+  with <code>bgp-lost</code> the post-check fails and the device rolls back. <a href="https://github.com/stratoweave/stratoweave/pull/667">#667</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/678">#678</a></li>
+<li>Removed <code>running-release</code> from the device software state. The release a
+  device runs is in <code>state/platform/version</code>, which is read again when a
+  software install ends, also after a rollback. <a href="https://github.com/stratoweave/stratoweave/pull/718">#718</a></li>
+<li>Mock devices set the platform that the IOS XE mock reports under
+  <code>mock/platform</code>: <code>version</code>, the release before an upgrade, <code>model</code> and
+  <code>serial-number</code>. Without them a mock runs 17.18.02 on a C8000V.
+  <code>mock/platform/version</code> replaces <code>mock/software/running-release</code>. The mock
+  reports a release the way a device does, 17.18.02 as 17.18.2. <a href="https://github.com/stratoweave/stratoweave/pull/718">#718</a></li>
+<li>Mock upgrades vary in length. Each takes a time within
+  <code>mock/software/upgrade-duration-variance</code> percent of <code>upgrade-duration</code>,
+  either way, 20 by default, so devices released together no longer all
+  finish together. 0 keeps every upgrade at exactly <code>upgrade-duration</code>.
+  <a href="https://github.com/stratoweave/stratoweave/pull/770">#770</a></li>
+<li>A software veto holds only the install. The software manager still reads
+  the release the device runs and reports <code>up-to-date</code>, or the new
+  <code>upgrade-needed</code> when it differs. The vetoes are read again right before
+  the install, so a veto added during the pre-checks holds it too. Before, a
+  veto stopped even the read. <a href="https://github.com/stratoweave/stratoweave/pull/775">#775</a></li>
+<li>The software state says which campaign and target release its status
+  answers, in <code>state/upgrade-campaign</code> and <code>state/target-release</code>. A final
+  status stands, so a reconnect or an unrelated config change no longer
+  runs a failed upgrade again. The install installs the release the run
+  read the device for, and a target changed during the pre-checks is read
+  again before anything is installed. <a href="https://github.com/stratoweave/stratoweave/pull/775">#775</a></li>
+<li>Under a veto, a read of the release that fails gives <code>unknown</code> with the
+  error, and is read again when the device connects, or after a while.
+  With <code>runtime-schema-fetch</code>, a NETCONF get or RPC on a device that has not
+  connected yet fails as not connected, instead of with a missing schema. <a href="https://github.com/stratoweave/stratoweave/pull/775">#775</a></li>
+<li>With <code>allow-staging</code>, the software manager prepares the target while a
+  veto holds the install: it copies the image to the device ahead of the
+  window, once per intent. The result is in <code>state/job[prepare]</code>, which also
+  says which <code>release</code> it is for. A failed prepare leaves the status
+  <code>upgrade-needed</code>. The prepare of a run reports in the same entry. Before,
+  <code>allow-staging</code> was stored and not used. <a href="https://github.com/stratoweave/stratoweave/pull/775">#775</a></li>
+<li>An image in <code>/images/image</code> can have the <code>md5</code>, <code>sha256</code> and <code>sha512</code>
+  digests that its vendor publishes in its <code>checksum</code> list, and its <code>size</code>
+  in bytes. A campaign copies them with the image URL into the software
+  intent of each device, as <code>software/image-checksum</code> and
+  <code>software/image-size</code>, for the device's adapter to check the staged image
+  against. <a href="https://github.com/stratoweave/stratoweave/pull/778">#778</a></li>
+<li>The IOS XE software adapter picks how each step of an upgrade runs from the
+  modules of the device's connected adapters: over NETCONF where the device
+  has the module for the step, else over the IOS XE CLI adapter. That covers
+  reading the release and the versions, the transfer, the check, add,
+  activate, commit and abort. It lists <code>bootflash:</code> over NETCONF
+  (<code>Cisco-IOS-XE-platform-software-oper</code>) or the CLI, and checks a staged
+  image with the CLI adapter's <code>verify</code>: against the image checksum of the
+  intent, sha512 before md5, or else against the signature that the image
+  holds. A device that can compute no checksum compares the size of the
+  staged file with <code>software/image-size</code>. <a href="https://github.com/stratoweave/stratoweave/pull/799">#781</a></li>
+<li>IOS XE prepare and install can run again at any time and do only what is
+  left. A release that the device has added needs no image file, and a
+  staged file that passes its check stays. A missing or failing file is
+  transferred and checked again. Install activates a release that the
+  device has added, and a release that the device runs activated and not
+  committed is committed instead of reported up to date. When install add
+  refuses an image as bad, the adapter deletes the file over NETCONF, so the
+  next run transfers it again. <a href="https://github.com/stratoweave/stratoweave/pull/781">#781</a></li>
+<li>Before it stages an image, the IOS XE adapter waits until each adapter of
+  the device that is not connected, such as a CLI adapter that connects
+  after NETCONF, has been without a connection for 2 minutes. The wait
+  counts from when the adapter lost its connection or was set up, so the
+  later stages of an upgrade do not wait again. <a href="https://github.com/stratoweave/stratoweave/pull/799">#781</a></li>
+<li>The IOS XE software adapter converts a device in bundle mode, which it
+  also detects over NETCONF, to install mode, and on IOS XE 16 it installs
+  with one command, <code>install add file ... activate commit</code>. A C1111 went
+  from 16.8.1 in bundle mode to 17.15.06 over the CLI alone. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>Before a transfer the IOS XE adapter looks for room for 2.2 times the
+  image size, and before an add for 1.2 times. When short, it removes the
+  software that the device does not run, once. The manager calls <code>cleanup</code>
+  after the commit. A transfer that failed for lack of room says so. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>The IOS XE adapter removes another added release before it stages the
+  target, and aborts another release pending commit before an install. It
+  refuses to install while a change that someone made to the running
+  configuration is not saved, and saves a change that the device made
+  itself as it booted. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>The IOS XE commit window comes from the device's abort timer. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>A staged IOS XE image that passed a check is not checked again while its
+  index, size and modification time in <code>dir</code> stay the same. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>The prepare job tells how far a transfer is, in <code>progress</code> and in its
+  message: over NETCONF from the size of the file on bootflash, over the
+  CLI from the output of the copy. A software adapter reports it with the
+  new <code>SoftwareManager.report_transfer</code>. An xcopy also ends when the file
+  has the image size, as IOS XE 17.9.5a records no xcopy. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>No upgrade runs while the device is not connected: the software manager
+  waits as under a veto and reads the release again when an adapter
+  connects. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>The install is a job in the device software state, <code>job[install]</code>. While
+  the prepare or the install runs, the message of its job says what the
+  device does, as the adapter reports it with the new
+  <code>SoftwareManager.report_step</code>. After the install, the install job says
+  when the commit window ends, until the run commits or rolls back. The
+  IOS XE adapter reports the transaction that the device runs, like
+  <code>add: extract</code> or <code>activate: reload</code>, the step lines of an install command
+  over the CLI, the check and the transfer of the image, and <code>waiting for
+  the device to boot</code>. The IOS XE CLI adapter has <code>install-progress</code>, the
+  last step line of the install command that runs. The IOS XE mock lists a
+  running operation in <code>Cisco-IOS-XE-install-oper</code> and takes it through its
+  stages. <a href="https://github.com/stratoweave/stratoweave/pull/803">#803</a></li>
+<li>The software intent has an <code>attempt</code>, 0 by default. The state has an
+  entry for each attempt at the target in the campaign,
+  <code>state/attempt[number]</code>, with its status, stage, reason, checks and
+  jobs; the entries of earlier attempts stay. A final status stands for its
+  attempt: a reconnect, a new device type, or the target removed and set
+  again runs nothing. A new attempt reads the device again, and runs a
+  failed upgrade again when no veto holds the install. A run of another
+  attempt that is under way finishes first. When that run fails its
+  rollback, the device may run the release it installed, uncommitted, so
+  the new attempt does not start: it answers the new status <code>not-started</code>,
+  with the failed attempt in its <code>reason</code>. A run that a new target or
+  campaign, or a removed target, stops before its install ends at
+  <code>upgrade-needed</code>. <a href="https://github.com/stratoweave/stratoweave/pull/814">#804</a></li>
+<li>Images can be kept in folders inside the image folder. An image in
+  <code>/images/image</code> has a new <code>file</code> leaf, the path of its file there, such as
+  <code>iosxe/17.18/c8000v-universalk9.17.18.03a.SPA.bin</code>; without it the file is
+  the image's name, as before. A device's URL is <code>url-base</code> followed by the
+  file. Campaigns keep naming the image, so moving its file changes only the
+  <code>file</code> leaf, and the campaigns give their members the new URL. Members
+  that answered or finished keep their status, since the target release
+  stays the same. <code>GET /image-file</code> lists the files in every folder, by
+  path, and the folders under <code>folders</code>; <code>PUT /image-file/&lt;path&gt;</code> makes the
+  folders on the way. <code>PUT</code> and <code>DELETE /image-folder/&lt;path&gt;</code> make a folder
+  and remove one with everything in it, and <code>POST /image-move</code> with
+  <code>{"from": ..., "to": ...}</code> moves or renames a file or folder without
+  replacing anything.</li>
+<li>The software state shows the vetoes of the configuration under
+  <code>state/veto</code>, with their reasons. <a href="https://github.com/stratoweave/stratoweave/pull/811">#811</a></li>
+</ul>
+<h3 id="fleet-manager">Fleet Manager<a class="headerlink" href="#fleet-manager" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Campaigns show each device's pre-check and post-check verdicts, upgrade
+  stage and failure reason, and the web UI draws each run as a chain of
+  steps. How long the checks wait is set per device under <code>upgrade-checks</code>.
+  <a href="https://github.com/stratoweave/stratoweave/pull/669">#667</a> <a href="https://github.com/stratoweave/stratoweave/pull/700">#678</a></li>
+<li>Fixed replanning a campaign moving done and in-flight devices to the time
+  of the replan. Released devices keep their real times, and only the
+  waiting ones are placed again. A window that is already open is planned
+  with the time it has left, instead of counting the devices that don't fit
+  as late. <a href="https://github.com/stratoweave/stratoweave/pull/672">#672</a></li>
+<li>Campaigns are paced by how many devices upgrade at the same time, with
+  <code>target-concurrency</code> and <code>max-concurrency</code>, instead of <code>target-rate</code> and
+  <code>max-rate</code> in devices per hour. With rates, slower upgrades put more
+  devices in flight, which overloaded the system further. <a href="https://github.com/stratoweave/stratoweave/pull/723">#723</a></li>
+<li>Fixed campaigns that never ended after a window of a schedule opened again
+  while its earlier window still held released devices. The waiting devices
+  were placed in both windows and counted twice. <a href="https://github.com/stratoweave/stratoweave/pull/722">#722</a></li>
+<li>The release decisions of a campaign moved from the campaign actor into the
+  <code>stratoweave.fleet_ctl.Controller</code> class. The controller has no clock and
+  no I/O, so <code>test_fleet_ctl</code> runs it without an actor. <a href="https://github.com/stratoweave/stratoweave/pull/725">#725</a></li>
+<li>Removed the <code>stratoweave.fleet_sched</code> module. Its helpers moved into
+  <code>stratoweave.fleet_ctl</code>, and the campaign simulator
+  <code>stratoweave.fleet_sched_sim</code> is now <code>stratoweave.fleet_ctl_sim</code>. <a href="https://github.com/stratoweave/stratoweave/pull/740">#740</a></li>
+<li>A campaign's plan comes from the controller that releases the devices, run
+  ahead at the expected upgrade durations. Before, a campaign could plan
+  without alarms and raise alarms as soon as it ran, especially in fleets
+  that mix fast and slow devices. Each device keeps the window its plan
+  gives it, and a device that misses its window moves to the next window of
+  its schedule. The controller goes above <code>target-concurrency</code>, up to
+  <code>max-concurrency</code>, only when the windows or the deadline need it.
+  <code>max-concurrency</code> counts the devices of the whole campaign. Plan alarms
+  name the affected devices. A window that opened on an earlier day and is
+  still open is used too. <a href="https://github.com/stratoweave/stratoweave/pull/730">#730</a></li>
+<li>Devices can be members of redundancy groups, set under
+  <code>/fleet/device/redundancy-group</code> with a <code>redundancy-priority</code>. A
+  campaign upgrades the members of a group one at a time, lower priority
+  first and equal priorities by name. <code>/redundancy-groups</code> sets how far
+  apart they go: <code>spread</code>, the default, moves later members to later
+  windows of the campaign where a device of the same estimate in no group
+  can trade windows with them, and <code>pack</code> starts each member as soon as
+  the one before it is done; both keep an optional <code>min-separation</code>. When
+  the upgrade of a member fails or rolls back, the other members keep their
+  windows and wait as the group's <code>failure-policy</code> says. The plan's alarms
+  name the devices that wait. <a href="https://github.com/stratoweave/stratoweave/pull/740">#740</a></li>
+<li>Fixed upgrade duration estimates being reduced by devices that already
+  run the target release. These devices could cause the campaign to
+  underestimate upgrade times and schedule too many devices in the first
+  windows. <a href="https://github.com/stratoweave/stratoweave/pull/740">#740</a></li>
+<li>A campaign no longer raises its concurrency for good when a device
+  reports a few seconds late or upgrade times scatter around the estimate.
+  The expected pace is the mean of the last upgrades, a round and a
+  quarter at <code>target-concurrency</code>, and a device is late only a fifth of
+  its upgrade after it was expected to end. Before, one late device could
+  raise the concurrency for the rest of the campaign and give alarms.
+  <a href="https://github.com/stratoweave/stratoweave/pull/746">#746</a></li>
+<li>A window starts a device only while its close margin is left before the
+  window closes, by default one and a half times the device's slow time.
+  The slow time is the 98<sup>th</sup> percentile of the last upgrade times, two
+  rounds at <code>max-concurrency</code> and at least 50, so the margin grows when
+  slow upgrades show, and one slow upgrade alone moves it only through the
+  mean of the last upgrades. Set the margin with <code>close-margin</code> on the
+  campaign. Before, a fifth of the expected duration was the only margin,
+  and upgrades in a heavy tail ran past the close. A device whose margin
+  is longer than the time left in every window of its schedule does not
+  start, and the plan says so. <a href="https://github.com/stratoweave/stratoweave/pull/746">#746</a></li>
+<li>The ramp lets three more devices start for each device that is done
+  without a failure, up to the concurrency, instead of doubling once a
+  whole round has finished. A round now takes four times as many devices,
+  the starts spread out as devices finish, and when the plan raises the
+  concurrency, the extra devices start as devices finish instead of all
+  at once. Failed upgrades no longer grow the ramp. <a href="https://github.com/stratoweave/stratoweave/pull/746">#746</a></li>
+<li>A campaign spreads its starts over the <code>stagger</code>, in percent of the
+  expected upgrade time: 25 by default. A device that starts holds the
+  next start back by that part of its upgrade time, divided by the
+  concurrency, so a larger campaign starts faster. Before, a window that
+  opened with room for many devices started them all in the same second.
+  <a href="https://github.com/stratoweave/stratoweave/pull/748">#748</a></li>
+<li>Campaign plans are computed faster. The first plan for 100,000 devices
+  takes seconds instead of minutes, and a decision that only starts devices
+  reuses the last plan while no report came in, no device is due and no
+  window opens or closes. <a href="https://github.com/stratoweave/stratoweave/pull/748">#748</a></li>
+<li>Campaign decisions are about 6 times faster at 100,000 devices: a plan
+  after a report takes 85 ms instead of 521 ms in a release build. Most of
+  the gain is in the run ahead that computes a plan. The controller numbers
+  the devices and keeps their state in lists by number, so a run ahead
+  copies and indexes lists instead of hashing device names in tables of
+  100,000 entries. Each step of the controller takes the reports that it
+  has not counted yet from a heap ordered by time, instead of going through
+  all of them. The windows of a schedule share one count of their waiting
+  devices and one sort of the devices by estimate, instead of one per
+  window. The campaign reads its members' schedules, estimates and
+  redundancy groups from the inventory when the campaign or the inventory
+  changes, instead of at every decision. <a href="https://github.com/stratoweave/stratoweave/pull/787">#787</a></li>
+<li>Fixed a member whose final report came before its release, but in the
+  same second, counting as an upgrade of one second. It happened to members
+  that were already up to date when the campaign started, and dragged the
+  campaign's pace down. <a href="https://github.com/stratoweave/stratoweave/pull/766">#766</a></li>
+<li>Maintenance windows that are open at the same time share a campaign's
+  free slots. Before, the window that opened first took every slot it
+  could use, and a window that opened later waited until the first had
+  nothing left to start. Each schedule with an open window now gets slots
+  by the upgrade time it must start before the first of their last
+  starts, counting the time it has after the others close. So a schedule
+  with time of its own at the end leaves the slots to one that closes
+  first, and a deadline needs about the concurrency it needed before.
+  Windows that close together share in proportion to the upgrade time
+  waiting in them. <a href="https://github.com/stratoweave/stratoweave/pull/770">#770</a></li>
+<li>Fixed an edit of a campaign, or of its schedules, images, redundancy
+  groups or member devices, removing the software intent of the devices
+  that the campaign had released, until the campaign wrote it again a
+  moment later. An upgrade that had not reached its install could fail.
+  <a href="https://github.com/stratoweave/stratoweave/pull/783">#783</a></li>
+<li>Campaigns acquire their members in <code>plan</code> and in <code>run</code>. Each member in
+  the fleet gets the campaign's name, its target release and image URL, and
+  a veto with the holder <code>campaign:NAME</code>, which holds the install. So each
+  member reads the release it runs and answers <code>up-to-date</code> or
+  <code>upgrade-needed</code>, and nothing is installed. A member added to a running
+  campaign is acquired the same way. In <code>run</code>, the campaign removes a
+  member's veto when it releases the member, and puts it back when the
+  member is done. Before, a campaign wrote nothing until it released a
+  member in a window. <a href="https://github.com/stratoweave/stratoweave/pull/783">#783</a></li>
+<li>A device in the fleet is in one campaign at most, also while the
+  campaign is in <code>plan</code> and after it is done. An edit that names a device
+  in a second campaign fails with "Cannot merge leaves with different
+  values at /software/upgrade-campaign". To move a device, remove it from
+  its campaign, or delete the campaign, in an earlier edit. A device that
+  is not in the fleet gets nothing from a campaign, so two campaigns can
+  name it. The edit that adds it to the fleet then fails with the same
+  error until only one campaign names it. <a href="https://github.com/stratoweave/stratoweave/pull/783">#783</a></li>
+<li>A campaign's <code>device-status</code> shows a member's status only when the status
+  is for the campaign's intent, its name and the member's target release,
+  and <code>pending</code> otherwise. The counters count only those statuses. Before, a <code>succeeded</code> left from an earlier campaign made
+  a member done at its release, with no upgrade. <a href="https://github.com/stratoweave/stratoweave/pull/783">#783</a></li>
+<li>Setting a running campaign back to <code>plan</code> pauses it: members in flight
+  stop before their install, and are released again when the campaign runs
+  again. A member that still reports <code>in-progress</code> for the campaign when it
+  runs again, or after a restart of fleetmgr, counts in flight and keeps
+  the campaign's veto until it is done, or until it stops before its
+  install. Stopping a campaign and running it again no longer retries its
+  failed members. <a href="https://github.com/stratoweave/stratoweave/pull/783">#783</a></li>
+<li>With <code>allow-staging</code>, a campaign in <code>run</code> lets each member that needs the
+  upgrade, and that the plan gives a window, prepare its image once before
+  its window, under the campaign's veto. The first member prepares at once.
+  The others follow as far apart as their deadlines allow: the opening of
+  the next window of the member's schedule, less <code>close-margin</code> percent of
+  its expected prepare time. No member prepares while a window of its
+  schedule is open, and a failed prepare is not tried again. In <code>plan</code>
+  nothing is copied. The plan's new <code>prepare-start</code> says when each member
+  prepares, and <code>prepare-concurrency</code> how many copies run at most at once;
+  there is no cap. <code>device-status</code> shows each member's <code>prepare</code>, and the
+  new counters <code>preparing</code> and <code>prepared</code> count the members that wait for
+  their release. New plan alarms: "N device(s) cannot prepare before their
+  window opens" and "N device(s) failed to prepare and copy the image in
+  their window". The upgrade in the window still copies the image again.
+  Before, <code>allow-staging</code> on a campaign had no effect. <a href="https://github.com/stratoweave/stratoweave/pull/784">#784</a></li>
+<li>A campaign releases a member only once the member's status answers the
+  campaign's target: <code>upgrade-needed</code>, or a final status. Until then the
+  plan holds the member in its window, with the alarm "N device(s) have not
+  answered the campaign's target", and the members after it in its
+  redundancy groups with "N device(s) wait behind a redundancy group member
+  that has not answered". <code>unknown</code> and <code>pending</code> are no answer. A campaign
+  in <code>plan</code> plans again as its members answer, and plans a run that starts
+  now, so its plan shows what <code>run</code> would do. So a member added to a
+  running campaign waits until it has read the release it runs, and is then
+  planned and released. A campaign created directly in <code>run</code> promises its
+  windows in the order its members answer. Create it in <code>plan</code> first to
+  keep the campaign's order. A decision that only starts devices still
+  takes the last plan again when the plan's only alarms are for held
+  devices. <a href="https://github.com/stratoweave/stratoweave/pull/783">#783</a></li>
+<li>A campaign's new <code>failure-budget</code>, in percent of its members, stops its
+  releases when more members have failed than the budget. The members in
+  flight finish, and the plan's alarm says "N device(s) failed, more than
+  the failure budget of M: no more devices start". To go on, raise or
+  remove the budget, or remove failed members. Without a budget, a
+  campaign releases as before. <a href="https://github.com/stratoweave/stratoweave/pull/791">#791</a></li>
+<li>A campaign holds a waiting member while the member is down: its flotilla
+  is not connected to it, or the top is not connected to its flotilla. The
+  member starts when it is back up, so a dead flotilla holds only its own
+  members. Before, a member that was down was released and failed. Each
+  held member's <code>device-status</code> gives the reason in <code>held</code> and the device
+  or flotilla that holds it in <code>held-by</code>, and <code>state/held</code> counts them. New
+  plan alarms name the members that are down, the members in flight that
+  are still down after their expected end, and the held members that lost
+  the window promised to them. <a href="https://github.com/stratoweave/stratoweave/pull/794">#794</a></li>
+<li>A campaign's new <code>notification-period</code>, in days, gives the customers of
+  its members time to be told about their window: the campaign uses only
+  the windows that open that long or more after it first went to <code>run</code>.
+  That time is the campaign's <code>state/run-since</code>, and a pause and a restart
+  of fleetmgr keep it. For a campaign from an earlier version, <code>run-since</code>
+  is the time Fleet Manager first starts on this version, or, for a
+  campaign in <code>plan</code>, the time it next goes to <code>run</code>. 0, the default, gives
+  no notice. <a href="https://github.com/stratoweave/stratoweave/pull/795">#795</a></li>
+<li>A campaign member has an <code>attempt</code>. Changing it tries the member again:
+  the campaign takes it as a new member, its device reads its release
+  again, and a member that failed is released again in a window. A member
+  in flight gets the campaign's veto back; a run past its install finishes
+  and holds its slot until it ends. Removing a member and adding it again
+  no longer tries it again: its device keeps the final status of its
+  attempt. <code>device-status</code> shows the attempt that counts, the one in
+  progress or else the member's attempt, in its new <code>attempt</code>, and no
+  longer the <code>upgrade-campaign</code> and <code>target-release</code> of the device. A
+  member with a new attempt no longer counts against the failure budget.
+  A new attempt set while a run fails its rollback does not start: the
+  member shows <code>not-started</code>, counts as failed, and holds its redundancy
+  groups as a failed rollback does, until it has another attempt. <a href="https://github.com/stratoweave/stratoweave/pull/804">#804</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/814">#814</a></li>
+<li>A redundancy group's new <code>failure-policy</code> says what a failed member does
+  to the other members. With <code>continue</code>, the default, a member that failed
+  or rolled back holds them only until it is done and up again, and the
+  next member starts after the group's <code>min-separation</code>. A member whose
+  rollback failed is in an unknown state, and holds them until an operator
+  acts. With <code>hold</code>, the other members wait for an operator after any
+  failure, as before. <a href="https://github.com/stratoweave/stratoweave/pull/811">#811</a></li>
+<li>A campaign holds a member whose device has a veto of another holder,
+  such as a service health check, until the veto goes. <code>device-status</code>
+  shows the device's vetoes, and the held reason <code>vetoed</code> with the veto's
+  holder in <code>held-by</code>; the members after it in its redundancy groups are
+  held as <code>group-vetoed</code>. The plan's alarm says "N device(s) are held by a
+  veto of another holder". A released member that gets such a veto before its
+  run starts, or that the veto stops before its install, waits again and
+  frees its slot. Before, the campaign released it, and it held a slot
+  while its device did not install. <a href="https://github.com/stratoweave/stratoweave/pull/811">#811</a></li>
+<li>Each <code>/fleet/device</code> has the platform that its flotilla reads from the
+  device under <code>state/platform</code>, absent until the device has connected. A
+  campaign's <code>device-status</code> has each member's <code>version</code> and <code>model</code> instead
+  of <code>running-release</code>. The web UI shows the platform on the devices, device
+  and campaign pages, and the devices page filters by model. <a href="https://github.com/stratoweave/stratoweave/pull/718">#718</a></li>
+<li>The top always starts ten flotillas and places each device on <code>flotilla-N</code>
+  by a hash of its name. Removed <code>/fleet/node</code> and <code>/fleet/device/shard</code>.
+  Devices without a shard, which the top managed itself, are no longer
+  supported. <a href="https://github.com/stratoweave/stratoweave/pull/713">#713</a></li>
+<li>Campaigns select an <code>image</code> for each device instead of setting one
+  <code>target-release</code> and <code>image-url</code> for the whole campaign. Images must be
+  listed under <code>/images/image</code> with a <code>version</code>. The campaign does not
+  configure an upgrade for a device if its image is missing from the list
+  or has no version. An alarm identifies the image and how many devices
+  are affected. The campaigns page no longer has a Release column. <a href="https://github.com/stratoweave/stratoweave/pull/743">#743</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/759">#759</a></li>
+<li>The new campaign page has three steps: pick devices by filtering or from
+  pasted names, pick an image for each model in the selection, and create
+  the campaign, which opens its page to set the schedule and pace. A
+  family's default image is preselected when exactly one default image lists
+  the model. Devices that haven't reported a model are left out, and a model
+  that no image lists prevents campaign creation. <a href="https://github.com/stratoweave/stratoweave/pull/743">#743</a></li>
+<li>The web UI has image pages. Image files dropped on them are uploaded, with
+  OS, version and family filled in from IOS XE file names. An image can be
+  made the default of its family, and the images page sets the image list's
+  <code>url-base</code>. Deleting an image also deletes its file. <a href="https://github.com/stratoweave/stratoweave/pull/742">#709</a> <a href="https://github.com/stratoweave/stratoweave/pull/743">#743</a></li>
+<li>The web UI's images page browses the image folder like a file manager:
+  open folders, make them, upload into the one shown, and rename, move and
+  delete files and folders, from a row's menu, by dragging rows onto a
+  folder, or on several selected rows at once. A move changes the <code>file</code> of
+  the images it takes along and keeps their names, also for images that
+  campaigns install. An upload whose file name is already an image's name
+  fails before the file is sent. Search covers the folder shown and the
+  folders in it, and files that the image list lacks show, ready to add.</li>
+<li>The web UI has a Config page that shows the top's configuration, the state
+  its transforms publish, or both, as XML, JSON or AData. The Apply config
+  page merges JSON or XML configuration into the running system with a
+  RESTCONF PATCH, after a confirmation. <a href="https://github.com/stratoweave/stratoweave/pull/736">#736</a></li>
+<li>The web UI has a search, in the header or with Ctrl/⌘+K, that jumps to a
+  page, campaign, image, device or schedule by name. <a href="https://github.com/stratoweave/stratoweave/pull/737">#737</a></li>
+<li>The web UI has redundancy group pages: a list, one page per group with its
+  members in upgrade order and its separation, and a page to create a group.
+  A member's priority can be typed there, or the member dragged to another
+  place, which sets the priorities that give that order. A change that
+  reorders another group of the device asks first. The device page sets a
+  device's groups and priority, and the devices page shows and filters by
+  group. The demo fleet pairs devices in groups. A campaign's page shows the
+  groups of its members, each member in upgrade order with its status and
+  time. Groups held behind a failed member come first, with a button that
+  takes that member out of the group. <a href="https://github.com/stratoweave/stratoweave/pull/789">#789</a></li>
+<li>The campaign page has Schedule and pace under the plan, folded each time
+  the page opens. The failed devices, the redundancy groups and the devices
+  fold too, and only the failed devices start open. Folded, the redundancy
+  groups say how many of them are held. <a href="https://github.com/stratoweave/stratoweave/pull/789">#789</a></li>
+<li>The device page is redesigned around the device's upgrade run. <a href="https://github.com/stratoweave/stratoweave/pull/674">#674</a></li>
+<li>The web UI's add and import device forms take a username and password,
+  instead of writing admin/admin for every device. Import uses one pair for
+  all its devices. <a href="https://github.com/stratoweave/stratoweave/pull/726">#726</a></li>
+<li>The web UI works on narrow screens and has better contrast and
+  accessibility. The campaign page leads with live progress and failures.
+  <a href="https://github.com/stratoweave/stratoweave/pull/679">#679</a></li>
+<li>The web UI no longer redraws the timeline every second and reads less from
+  the server. Each page reads only the fields that it shows, with the
+  RESTCONF <code>fields</code> query parameter. The devices and new-campaign pages and
+  the search share one fleet read for 30 s, and the Refresh button reloads
+  it. <a href="https://github.com/stratoweave/stratoweave/pull/687">#671</a> <a href="https://github.com/stratoweave/stratoweave/pull/805">#689</a></li>
+<li>Web UI pages show at once and fill in as their reads arrive, and the
+  sidebar marks the page that is loading. On large fleets the pages read
+  less: the device page reads only the device's own <code>device-status</code> entry,
+  a large campaign's page reads its state less often the longer the read
+  takes, and adding, importing, removing or scheduling devices updates the
+  devices list without reading the whole fleet again. Newly added devices
+  show no model or version until the page is loaded again. <a href="https://github.com/stratoweave/stratoweave/pull/754">#754</a></li>
+<li>The redundancy group pages, the campaigns list and the device page read
+  only what they show, with the RESTCONF <code>fields</code> query parameter. At 20k
+  devices the group pages read 2.8 MB of the fleet instead of 6.6 MB and
+  the campaigns list 0.4 MB of the campaigns instead of 1.4 MB. The device
+  page no longer reads the device's credentials. A campaign's counters are
+  one read instead of four, and on the campaigns list the plan alarms come
+  with them.</li>
+<li>Fixed the campaign plan timeline drawing a crowded window past its end.
+  Its columns grow taller instead. <a href="https://github.com/stratoweave/stratoweave/pull/761">#761</a></li>
+<li>fleetmgr and flotilla run Acton's generational garbage collector. Start
+  them with <code>ACTON_GC_MODE=ordinary</code> for the ordinary collector. <a href="https://github.com/stratoweave/stratoweave/pull/764">#764</a></li>
+<li>Removed the unused <code>cpe-device</code> model. The IOS XE device type directory is
+  now <code>dev-iosxe</code>. <a href="https://github.com/stratoweave/stratoweave/pull/694">#694</a></li>
+<li><code>just demo-all</code> deploys the CEs, starts the top and loads both campaigns.
+  <a href="https://github.com/stratoweave/stratoweave/pull/690">#690</a></li>
+<li><code>just run</code> starts the top and its ten flotillas with no devices, images or
+  campaigns. <a href="https://github.com/stratoweave/stratoweave/pull/736">#736</a></li>
+<li><code>just build</code> builds fleetmgr and flotilla with <code>--release</code>, optimized for
+  speed and without debug symbols. <a href="https://github.com/stratoweave/stratoweave/pull/805">#805</a></li>
+<li>The web UI is built with SvelteKit 3, and <code>just gen-webui</code> needs Node 22.17
+  or newer. <a href="https://github.com/stratoweave/stratoweave/pull/745">#739</a></li>
+<li>A fleet device can have extra adapters, as a StratoWeave device can: the
+  <code>extra-adapter</code> list with the type, address, port, credentials and SSH
+  settings of each, which the transforms pass to the device on its
+  flotilla. The flotillas register the device type <code>iosxe-cli</code>, the IOS XE
+  CLI adapter, so an IOS XE device can have the CLI beside NETCONF. <a href="https://github.com/stratoweave/stratoweave/pull/779">#779</a></li>
+<li>A fleet device has <code>upgrade-checks/enabled</code>, true by default. With false,
+  its upgrades go without the BGP pre- and post-checks. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>The prepare in the upgrade status of a fleet device, and in the
+  <code>device-status</code> of a campaign, has <code>progress</code>: how far the device's
+  transfer is. <a href="https://github.com/stratoweave/stratoweave/pull/799">#799</a></li>
+<li>The upgrade status of a fleet device, and the <code>device-status</code> of a
+  campaign, have <code>install</code>: the device's install job, whose message says
+  what the device does. The web UI shows it for each device of a campaign
+  and on the device page, with a bar for the transfer of the prepare.
+  <a href="https://github.com/stratoweave/stratoweave/pull/803">#803</a></li>
+</ul>
+<h3 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h3>
+<h4 id="acton">Acton<a class="headerlink" href="#acton" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Requires Acton newer than 0.31.0, for explicit parameter defaults
+  <a href="https://github.com/actonlang/acton/pull/3211">acton#3211</a>, the <code>Env</code> services <a href="https://github.com/actonlang/acton/pull/2768">acton#2768</a> and the write barriers of
+  the generational garbage collector <a href="https://github.com/actonlang/acton/pull/3390">acton#3390</a>.</li>
+</ul>
+<h4 id="acton-yang">acton-yang<a class="headerlink" href="#acton-yang" title="Permanent link">&para;</a></h4>
+<ul>
+<li>gdata is encoded as compact XML and JSON by default, as in the Acton
+  stdlib. Pretty output was only meant for developers. <a href="https://github.com/stratoweave/acton-yang/pull/541">acton-yang#541</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/684">#684</a></li>
+<li>Removed the YANG parser statement cache and the <code>yang.compile_with_cache()</code>
+  function. With the recent improvements to Acton RTS and GC that part of the
+  pipeline is no longer significant. <code>~/.cache/ayang</code> is not used any more.
+  <a href="https://github.com/stratoweave/stratoweave/pull/707">acton-yang#544</a></li>
+<li><code>DRoot.module_metadata</code> entries are <code>yang.schema.ModuleMetadata</code> tuples,
+  with the module in <code>name</code> instead of <code>module</code>. The new <code>submodules</code> and
+  <code>implemented</code> fields are for schema discovery APIs. <a href="https://github.com/stratoweave/stratoweave/pull/714">acton-yang#545</a></li>
+<li>Optional APIs and generated constructors declare explicit defaults.</li>
+<li>Fixed YANG patterns with a <code>.</code> or <code>$</code> in a character class. The nokia-conf
+  module of SR OS 25.10 failed to compile with "Invalid range bound", and
+  <code>[.]</code> and <code>[$]</code> matched any character and the end of the string instead of
+  a literal dot and dollar sign. <a href="https://github.com/stratoweave/acton-yang/pull/547">acton-yang#546</a> <a href="https://github.com/stratoweave/stratoweave/pull/729">#729</a></li>
+<li>YANG sources are parsed concurrently, which makes compiling large module
+  sets faster. Removed <code>yang.parse_modules()</code> and <code>yang.compile_from_stmt()</code>,
+  which were only needed for the statement cache. <a href="https://github.com/stratoweave/stratoweave/pull/734">acton-yang#550</a></li>
+<li><code>yang.schema.DRoot.merge()</code> merges compiled schema roots into one, like the
+  CFS schema and ietf-yang-library that a northbound server serves together.
+  It raises <code>ValueError</code> when two roots hold the same top-level node or
+  different revisions of a module. <a href="https://github.com/stratoweave/stratoweave/pull/716">acton-yang#548</a></li>
+<li><code>take_leaf()</code> and <code>take_leaflist()</code> of the <code>yang.data.YangData</code> protocol
+  return no <code>t</code> type field. gdata keeps a union's value as its Acton type,
+  so the field is no longer needed. <a href="https://github.com/stratoweave/stratoweave/pull/741">acton-yang#553</a></li>
+<li>The <code>take_container()</code>, <code>take_list()</code>, <code>take_leaf()</code> and <code>take_leaflist()</code>
+  methods of <code>yang.data.YangData</code> no longer take the node's adata attribute
+  name. The adata generator stores that name in the schema as the new
+  <code>adata_name</code> of each node, and <code>yang.data.from_data()</code> reads it from there
+  instead of computing it on every call. <a href="https://github.com/stratoweave/stratoweave/pull/762">acton-yang#552</a></li>
+<li><code>yang.schema.DNode.gname</code> is the node's <code>gdata.Id</code> instead of the name of
+  its gdata class, like <code>Container</code>, and a <code>DList</code> has the <code>gdata.Id</code> of each
+  key in <code>key_gnames</code>. <code>yang.data.from_data()</code> uses them instead of creating
+  a <code>gdata.Id</code> for every node it reads, and the generated adata
+  <code>from_gdata()</code> methods use <code>gdata.Id</code> constants of their module. Fleet
+  Manager with 50,000 devices has all of them connected in 22 s instead of
+  33 s. <a href="https://github.com/stratoweave/acton-yang/pull/558">acton-yang#557</a> <a href="https://github.com/stratoweave/stratoweave/pull/790">#762</a></li>
+<li>Fixed subscription data callbacks running in the provider's actor.
+  <code>yang.gdata.Dst</code> and the data callback of <code>TreeProvider.declare_subscriptions</code>
+  take an action again instead of a proc, so a consumer that passes its actor
+  method gets the data in its own actor. A generated <code>dst()</code> converts each
+  tree in an actor of its own instead of in the provider. <a href="https://github.com/stratoweave/acton-yang/pull/556">acton-yang#556</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/758">#758</a></li>
+<li>Fixed XML parser skipping a leaf with an empty tag, like <code>&lt;k1/&gt;</code> or
+  <code>&lt;k1&gt;&lt;/k1&gt;</code>. Its normalized value is an empty string. This makes it
+  possible to use the empty string as a key value too. <a href="https://github.com/stratoweave/acton-yang/pull/554">acton-yang#554</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/744">#744</a></li>
+<li>A <code>root_path</code> passed to <code>yang.data.from_data()</code> can lead to a notification,
+  top-level or nested in a container, so a notification payload decodes like
+  RPC output. <a href="https://github.com/stratoweave/stratoweave/pull/751">acton-yang#555</a></li>
+<li>Fixed XML decoding keeping only the first of a container element that
+  occurs more than once in the same parent. IOS XE 17.15 periodic yang-push
+  updates repeat <code>&lt;neighbors&gt;</code> for each BGP neighbor, so a NETCONF
+  subscription got only the first neighbor and the fleetmgr BGP post-check
+  failed. The occurrences are now read as one container. <a href="https://github.com/stratoweave/acton-yang/pull/560">acton-yang#560</a>
+  <a href="https://github.com/stratoweave/stratoweave/pull/802">#802</a></li>
+<li><code>yang.restconf.resolve_fields()</code> parses a RESTCONF <code>fields</code> value against
+  the schema below the target resource, and <code>select_fields()</code> narrows data
+  to the result. <a href="https://github.com/stratoweave/stratoweave/pull/805">acton-yang#561</a></li>
+</ul>
+<h4 id="acton-ssh">acton-ssh<a class="headerlink" href="#acton-ssh" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Fixed SSH events being delivered out of the order libssh raises them.
+  Under load, pipe streams were reordered and broke NETCONF chunk framing.
+  <a href="https://github.com/stratoweave/stratoweave/pull/670">acton-ssh#15</a></li>
+<li>Fixed a <code>Client</code> hanging forever when its <code>on_hostkey</code> handler never
+  responds. <code>connect_timeout</code> also covers the <code>on_hostkey</code> decision.
+  <a href="https://github.com/stratoweave/stratoweave/pull/707">acton-ssh#6</a></li>
+<li><code>SshPipe</code> takes <code>connect_timeout</code> and <code>auth_timeout</code>. Before, it always
+  used the <code>Client</code> defaults of 10 seconds. <a href="https://github.com/stratoweave/stratoweave/pull/707">acton-ssh#18</a></li>
+<li><code>SshPipe</code> can request an interactive shell with <code>shell=True</code>, instead of a
+  subsystem or a command. <a href="https://github.com/stratoweave/stratoweave/pull/714">acton-ssh#20</a></li>
+<li>Builds with Zig 0.17. <a href="https://github.com/stratoweave/stratoweave/pull/670">acton-ssh#17</a></li>
+<li>Connect failures are reported as <code>ssh.SshError</code>, or its subclasses
+  <code>KeyExchangeError</code>, <code>HostKeyError</code> and <code>AuthenticationError</code>, instead of
+  an <code>OSError</code> for everything. An <code>OSError</code> is left for failures before the
+  server's SSH banner, like a refused TCP connect. <code>Client.on_connect</code> gets
+  an exception instead of a string. <a href="https://github.com/stratoweave/stratoweave/pull/720">acton-ssh#21</a></li>
+<li>Stores GC pointers with write barriers, so programs that link it can run
+  in Acton's generational GC mode. <a href="https://github.com/stratoweave/stratoweave/pull/764">acton-ssh#23</a></li>
+<li><code>ssh.Server</code> serves interactive shells when it gets an <code>on_shell</code> action,
+  which receives the client's terminal as a <code>PtyRequest</code>, or <code>None</code> when the
+  client asked for none. Without <code>on_shell</code> the server refuses shells, as
+  before. <code>Channel.change_pty_size()</code> sends a terminal size change, which a
+  <code>ServerChannel</code> receives with <code>on_window_change</code>. <a href="https://github.com/stratoweave/stratoweave/pull/780">acton-ssh#24</a></li>
+<li>Fixed writes that queue more than 8 MiB failing their channel, which kept
+  a NETCONF message over 8 MiB from going out over an <code>SshPipe</code>.
+  <code>max_write_buffer</code> of <code>Client</code> and <code>Server</code> defaults to 0, no limit.
+  Writes go to libssh in pieces of at most 256 KiB, which also bounds
+  libssh's send buffer per connection. <a href="https://github.com/stratoweave/stratoweave/pull/788">acton-ssh#25</a></li>
+</ul>
+<h4 id="acton-lmdb">acton-lmdb<a class="headerlink" href="#acton-lmdb" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Builds with Zig 0.17. <a href="https://github.com/stratoweave/stratoweave/pull/670">acton-lmdb#6</a></li>
+</ul>
+<h4 id="actmf">actmf<a class="headerlink" href="#actmf" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Updated for explicit defaults.</li>
+</ul>
+<h4 id="actsnmp">actsnmp<a class="headerlink" href="#actsnmp" title="Permanent link">&para;</a></h4>
+<ul>
+<li>New dependency: an SNMP implementation in Acton, with SNMPv1, v2c and v3
+  and a MIB compiler that emits YANG (RFC 6643). The SNMP device adapters use
+  it. <a href="https://github.com/stratoweave/stratoweave/pull/701">#701</a></li>
+</ul>
+<h4 id="http-router">http-router<a class="headerlink" href="#http-router" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Query parameter names and values are percent-decoded.
+  <code>Context.query()</code> gives every value of each name as a list, in request
+  order, instead of one value, and <code>query_param()</code> gives the first. <a href="https://github.com/stratoweave/stratoweave/pull/805">#805</a></li>
+</ul>
+<h3 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The software upgrade reference is rewritten to match the code, and is part
+  of the guide. <a href="https://github.com/stratoweave/stratoweave/pull/699">#697</a></li>
+<li>The guide has a Releases page, which includes this changelog, and a
+  Roadmap page. <a href="https://github.com/stratoweave/stratoweave/pull/800">#800</a></li>
+</ul>
+<h3 id="testing-ci">Testing &amp; CI<a class="headerlink" href="#testing-ci" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Downstream upgrade PRs run <code>make gen</code>, so changes to generated code don't
+  break the downstream's checks. <a href="https://github.com/stratoweave/stratoweave/pull/706">#706</a></li>
+<li>Removed the actor pipe restart stress test, which was too slow for CI.
+  <a href="https://github.com/stratoweave/stratoweave/pull/696">#696</a></li>
+<li>Fixed the build of the multi-arch <code>ghcr.io/stratoweave/ncurl:latest</code> image
+  on runners with Docker Engine 29. <a href="https://github.com/stratoweave/stratoweave/pull/735">#735</a></li>
+<li>The notconf tests connect to 127.0.0.1 instead of <code>localhost</code>, which macOS
+  resolves to IPv6 first, where Docker's published port does not answer.
+  <a href="https://github.com/stratoweave/stratoweave/pull/751">#751</a></li>
+<li>Fixed <code>just system-test</code> in fleetmgr timing out. It runs each system test
+  once. <a href="https://github.com/stratoweave/stratoweave/pull/747">#747</a></li>
+<li>The <code>gc-check</code> CI job runs the fleetmgr tests with <code>acton test --gc-check</code>
+  and the fleetmgr demo for a minute under the GC write-barrier checker.
+  <a href="https://github.com/stratoweave/stratoweave/pull/764">#764</a></li>
+</ul>
+<h3 id="compatibility-notes">Compatibility Notes<a class="headerlink" href="#compatibility-notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Requires Acton newer than 0.31.0. Regenerate generated code with <code>make gen</code>
+  after upgrading. <a href="https://github.com/stratoweave/stratoweave/pull/714">#704</a> <a href="https://github.com/stratoweave/stratoweave/pull/764">#764</a></li>
+<li><code>adapter_type</code> and <code>software_adapter_type</code> in a <code>DeviceType</code> take <code>?Env</code>
+  instead of <code>?net.TCPConnectCap</code>. Adapters in other repositories, like
+  sw-adapter-cisco-ios-cli, need the same change. <a href="https://github.com/stratoweave/stratoweave/pull/702">#702</a></li>
+<li>gdata <code>to_xmlstr()</code> and <code>to_yang_jsonstr()</code> return compact output by
+  default. Pass <code>pretty=True</code> for indented output. <a href="https://github.com/stratoweave/stratoweave/pull/684">acton-yang#541</a></li>
+<li><code>/restconf-state/capabilities</code> no longer lists YANG modules. Read them from
+  <code>/ietf-yang-library:modules-state</code> or <code>/ietf-yang-library:yang-library</code>
+  instead. <a href="https://github.com/stratoweave/stratoweave/pull/716">#676</a></li>
+<li>The NETCONF server's <code>&lt;hello&gt;</code> lists no module capabilities, only
+  <code>yang-library:1.1</code>. Clients that take the server's modules from the
+  <code>&lt;hello&gt;</code> must read them from <code>/yang-library</code> or <code>/modules-state</code>. <a href="https://github.com/stratoweave/stratoweave/pull/716">#716</a></li>
+<li>The device software state has no <code>running-release</code>. Read the release a
+  device runs from <code>state/platform/version</code>, and in Fleet Manager from the
+  <code>version</code> of a campaign's <code>device-status</code>. Mock devices take the release
+  they start on as <code>mock/platform/version</code> instead of
+  <code>mock/software/running-release</code>. <a href="https://github.com/stratoweave/stratoweave/pull/718">#718</a></li>
+<li>An app with its own <code>device_types.act</code> must add
+  <code>import stratoweave.platform_probes as swplat</code> and
+  <code>platform_probes: list[swdev.PlatformProbe] = swplat.PROBES</code> to it. The
+  generated <code>sysspec.act</code> reads <code>platform_probes</code> from it, and the generator
+  does not change an existing <code>device_types.act</code>. <a href="https://github.com/stratoweave/stratoweave/pull/712">#712</a></li>
+<li>Fleet Manager has no <code>/fleet/node</code> and <code>/fleet/device/shard</code>. Remove them
+  from its configuration. <a href="https://github.com/stratoweave/stratoweave/pull/713">#713</a></li>
+<li>Fleet Manager campaigns take <code>target-concurrency</code> and <code>max-concurrency</code>
+  instead of <code>target-rate</code> and <code>max-rate</code>. Move configuration that sets the
+  old leaves. A campaign that sets neither upgrades 10 devices at once and
+  goes up to 50 when its windows or deadline need it. There is no unlimited
+  value. <a href="https://github.com/stratoweave/stratoweave/pull/730">#723</a></li>
+<li>Fleet Manager campaigns take an <code>image</code> in each <code>device</code> entry instead of
+  <code>target-release</code> and <code>image-url</code>. Add the images to <code>/images/image</code>, with
+  their <code>version</code>, set <code>/images/url-base</code>, and name an image for each member.
+  <a href="https://github.com/stratoweave/stratoweave/pull/743">#743</a></li>
+<li>A device can be in one Fleet Manager campaign only. Before you upgrade,
+  remove each device that two campaigns name from one of them. Otherwise
+  Fleet Manager cannot load its configuration and does not start. <a href="https://github.com/stratoweave/stratoweave/pull/783">#783</a></li>
+<li>Since a NETCONF <code>&lt;edit-config&gt;</code> transaction completes before the devices
+  have applied their configuration, a device rejecting its configuration is
+  no longer reported as an <code>rpc-error</code>. The device side is visible per
+  device instead: <code>state/adapter</code> shows whether it is connected, and the
+  inspection API's <code>/device/&lt;name&gt;/info</code> and <code>/device/&lt;name&gt;/log</code> show its
+  queue and what was sent to it. <a href="https://github.com/stratoweave/stratoweave/pull/792">#792</a></li>
+</ul>
+<h2 id="2610-2026-10-23"><a href="https://github.com/stratoweave/stratoweave/releases/tag/v26.10">26.10</a> - 2026-10-23<a class="headerlink" href="#2610-2026-10-23" title="Permanent link">&para;</a></h2>
+<p>Hello, world! This is the first formal release of StratoWeave, woven from
+first principles.</p>
+<p>There’s still work ahead before it’s ready for production, but it’s coming
+together quickly, and we think it’s ready for people to pick up and try. This
+release is an invitation to explore, experiment, and help shape what comes
+next. Give it a spin. We’d love to hear what you think.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../reference/device-platform/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Device platform">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Device platform
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../roadmap/" class="md-footer__link md-footer__link--next" aria-label="Next: Roadmap">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Roadmap
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 StratoWeave Project &copy; 2026 The Linux Foundation&trade;. All rights reserved.
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/stratoweave/stratoweave" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.action.edit","content.action.view","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+    
+  </body>
+</html>
